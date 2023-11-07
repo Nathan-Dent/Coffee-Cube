@@ -18,7 +18,68 @@ nav ul {
     display: flex;
     justify-content: space-between;
     padding-right: 40px;
+}
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-hours {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-menu-hours {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    padding: 5px;
+}
+
+.dropdown-menu-hours li {
+    padding: 5px;
+}
+
+.dropdown-menu-hours li:nth-child(2) {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu-hours li strong {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-hours:hover .dropdown-menu-hours {
+    display: block;
 }
 
 footer {
