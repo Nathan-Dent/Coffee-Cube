@@ -1,0 +1,43 @@
+* {
+    font-family: "KoHo";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    size: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container div {
+    text-align: center;
+}
+
+button {
+    background-color: #C3A88F;
+    border-radius: 16px;
+    width: 410px;
+    height: 94px;
+    border: none;
+    
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+}
