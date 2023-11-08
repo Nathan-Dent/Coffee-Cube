@@ -23,6 +23,7 @@ nav ul {
 .dropdown {
     position: relative;
     display: inline-block;
+    padding: 0px;
 }
 
 .dropdown-hours {
@@ -143,46 +144,63 @@ button:hover {
 /* ----- MAIN-MENU-SPECIFIC STYLING BEGINS HERE ----- */
 .shopping-header {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 60% 15% 5%;
     grid-template-rows: 100%;
 }
 
-.shopping-nav {
+.logobox {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.logobox img {
+    width: 50%;
+}
+
+.title-container {
+    font-size: xx-large;
+    padding-left: 68px;
+    
+}
+
+.shopping-header h1 {
+    grid-column: 2;
+    }
+
+.language-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-column: 3;
 }
 
-.shopping-nav ul {
+.language-button ul {
     justify-content: end;
+    padding: 0px;
 }
 
-.shopping-nav ul:first-of-type(a) {
+.language-button ul:first-of-type(a) {
     padding-right: 10px;
+}
+
+#cart-button {
+    grid-column: 4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .shopping-interface {
     display: grid;
+    gap: 68px;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 800px;
+    grid-template-rows: 600px;
 }
 
 .sidebar {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.sidebar-main {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 6fr;
@@ -192,7 +210,7 @@ button:hover {
     text-align: center;
 }
 
-.title {
+.drink-title {
     grid-column: 1;
     grid-row: 1;
 }
@@ -205,6 +223,22 @@ button:hover {
 .drink-sections ul {
     list-style: none;
     padding-left: 0px;
-    line-height: 80px;
+    line-height: 100px;
     font-size: large;
+}
+
+.menubox {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.sectionbox {
+    background-color: #767676;
+    width: 348px;
+    height: 173px;
+    border-radius: 16px;
+    margin: 20px;
+    overflow: scroll;
 }
