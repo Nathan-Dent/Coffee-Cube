@@ -270,7 +270,7 @@ button:hover {
 /* CSS for Sub-Menus (Coffee, Iced, Etc.) begins here */
 
 .increment-tool {
-    width: 50px;
+    width: 70px;
     height: 20px;
     border-radius: 25px;
     border: 1px solid black;
@@ -297,8 +297,16 @@ button:hover {
     border-right: 1px solid #7676765f;
 }
 
-.increment-tool #plus {
+#plus {
     grid-column: 3;
+}
+
+#plus a:hover {
+    text-decoration: none;
+}
+
+#minus a:hover {
+    text-decoration: none;
 }
 
 #minus {
@@ -311,6 +319,11 @@ button:hover {
     border-bottom-right-radius: 25px;
 }
 
+#quant {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 #plus:hover, #minus:hover {
     background-color: #7676765f;
 }
@@ -320,7 +333,9 @@ button:hover {
 }
 
 .menubox table th {
-    font-size: xx-large
+    font-size: xx-large;
+    text-align: left;
+    border-bottom: 1px solid black;
 }
 
 .menubox table tr:hover .menu-item {
