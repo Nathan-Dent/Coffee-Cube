@@ -358,6 +358,10 @@ button:hover {
         width: 90vw;
     }
 
+    #order-online {
+        width: 70vw
+    }
+
     .hamburger {
         padding: 15px 15px;
         display: inline-block;
@@ -422,7 +426,7 @@ button:hover {
         top: -10px;
       }
     
-    header #the-menu {
+    #the-menu {
         position: fixed;
         top: 0;
         left: 0;
@@ -437,13 +441,31 @@ button:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20% 0;
+        padding: 20px;
+        padding-bottom: 90px;
 
     }
 
-    header #the-menu.is-active {
+    #the-menu.is-active {
         z-index: 9990;
         opacity: 1;
         transform: translateY(0%);
+        padding: 0px;
     }
+
+    #the-menu ul {
+        flex-direction: column;
+        align-items: center;
+
+        height: 100vh;
+        padding: 50px;
+    }
+
+    #the-menu ul a {
+        color: white;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+
+
 }
