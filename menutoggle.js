@@ -4,6 +4,4 @@ const toggleMenu = () => {
     document.body.classList.toggle("is-active");
 };
 
-console.log(document.getElementById('hamburger'))
-
 document.getElementById('hamburger').addEventListener("click", toggleMenu);
