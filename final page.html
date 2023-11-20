@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <title>Order Placed - Coffee Cube</title>
+    <style>
+        .logobox img {
+            width: 100px;
+            height: auto;
+
+        }
+
+        .logobox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title-container h4 {
+            font-weight: normal;
+
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            align-items: center;
+        }
+
+        .logobox h1,
+        .title-container h4 {
+            margin: 0;
+        }
+
+        hr.half-line {
+            width: 100%;
+            margin: 30px 0;
+            border: none;
+            border-top: 5px solid tan;
+            border-radius: 3px;
+
+        }
+
+        .location-title h2 {
+            font-weight: normal;
+        }
+
+        .location-title {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+
+        .location-title h3 {
+            font-weight: normal;
+        }
+
+        #map {
+            height: 400px;
+
+        }
+
+        .storepickup-title h4 {
+            font-weight: normal;
+        }
+
+        .storepickup-title {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 10px;
+
+        }
+        .storepickup-title h2 {
+            margin-bottom: 5px; 
+        }
+    
+    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+
+<header class="shopping-header">
+    <div class="logobox">
+        <img src="./Coffee-Cube/assets/coffeecube_logo symbols.png">
+        <h1>See you soon!</h1>
+    </div>
+    <div class="title-container">
+        <h4> Estimated pickup: 9:30am </h4>
+    </div>
+</header>
+
+
+<hr class="half-line">
+
+<body>
+    <div class="location-title">
+        <h3>Old Town: Jakubská 16, 110 00 Staré Město</h3>
+    </div>
+    <div id="map"></div>
+
+    </div>
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([50.088542797779034, 14.426695468126846], 13); // Set the initial coordinates and zoom level
+
+        // Add OpenStreetMap as the base layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add a marker to the map
+        L.marker([50.088542797779034, 14.426695468126846]).addTo(map)
+            .bindPopup('Coffee Cube - Your Location')
+            .openPopup();
+    </script>
+
+
+    <div class="storepickup-title">
+        <h2>Store Pickup:</h2>
+        <h4>Head to the pickup counter and ask for your order;
+            if you have any questions, ask a barista. </h4>
+    </div>
+
+
+
+</body>
+
+</html>
