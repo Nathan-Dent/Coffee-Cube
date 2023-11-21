@@ -287,7 +287,7 @@ button:hover {
     text-align: center;
 }
 
-.increment-tool #minus {
+.increment-tool .minus {
     grid-column: 1;
 }
 
@@ -297,34 +297,34 @@ button:hover {
     border-right: 1px solid #7676765f;
 }
 
-#plus {
+.plus {
     grid-column: 3;
 }
 
-#plus a:hover {
+.plus a:hover {
     text-decoration: none;
 }
 
-#minus a:hover {
+.minus a:hover {
     text-decoration: none;
 }
 
-#minus {
+.minus {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
 }
 
-#plus {
+.plus {
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
-#quant {
+.quant {
     padding-left: 5px;
     padding-right: 5px;
 }
 
-#plus:hover, #minus:hover {
+.plus:hover, .minus:hover {
     background-color: #7676765f;
 }
 
