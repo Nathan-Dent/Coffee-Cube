@@ -13,6 +13,9 @@ espressoIncrement.addEventListener('click', function (event) {
 });
 
 espressoDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[0] == 0) {
+        return;
+    }
     itemQuantities[0] -= 1;
     espressoQuantity.innerHTML = itemQuantities[0];
 });
@@ -29,6 +32,9 @@ doubleEspressoIncrement.addEventListener('click', function (event) {
 });
 
 doubleEspressoDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[1] == 0) {
+        return;
+    }
     itemQuantities[1] -= 1;
     doubleEspressoQuantity.innerHTML = itemQuantities[1];
 });
@@ -45,6 +51,9 @@ americanoIncrement.addEventListener('click', function (event) {
 });
 
 americanoDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[2] == 0) {
+        return;
+    }
     itemQuantities[2] -= 1;
     americanoQuantity.innerHTML = itemQuantities[2];
 });
@@ -61,6 +70,9 @@ batchBrewIncrement.addEventListener('click', function (event) {
 });
 
 batchBrewDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[3] == 0) {
+        return;
+    }
     itemQuantities[3] -= 1;
     batchBrewQuantity.innerHTML = itemQuantities[3];
 });
@@ -77,6 +89,9 @@ v60Increment.addEventListener('click', function (event) {
 });
 
 v60Decrement.addEventListener('click', function (event) {
+    if (itemQuantities[4] == 0) {
+        return;
+    }
     itemQuantities[4] -= 1;
     v60Quantity.innerHTML = itemQuantities[4];
 });
@@ -93,6 +108,9 @@ macchiatoIncrement.addEventListener('click', function (event) {
 });
 
 macchiatoDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[5] == 0) {
+        return;
+    }
     itemQuantities[5] -=1;
     macchiatoQuantity.innerHTML = itemQuantities[5];
 });
@@ -109,6 +127,9 @@ cappuccinoIncrement.addEventListener('click', function (event) {
 });
 
 cappuccinoDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[6] == 0) {
+        return;
+    }
     itemQuantities[6] -= 1;
     cappuccinoQuantity.innerHTML = itemQuantities[6];
 });
@@ -125,6 +146,9 @@ latteIncrement.addEventListener('click', function (event) {
 });
 
 latteDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[7] == 0) {
+        return;
+    }
     itemQuantities[7] -= 1;
     latteQuantity.innerHTML = itemQuantities[7];
 });
@@ -141,6 +165,9 @@ flatWhiteIncrement.addEventListener('click', function (event) {
 });
 
 flatWhiteDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[8] == 0) {
+        return;
+    }
     itemQuantities[8] -= 1;
     flatWhiteQuantity.innerHTML = itemQuantities[8];
 });
@@ -158,6 +185,9 @@ mochaIncrement.addEventListener('click', function (event) {
 });
 
 mochaDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[9] == 0) {
+        return;
+    }
     itemQuantities[9] -= 1;
     mochaQuantity.innerHTML = itemQuantities[9];
 });
@@ -174,8 +204,12 @@ dirtyChaiIncrement.addEventListener('click', function (event) {
 });
 
 dirtyChaiDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[10] == 0) {
+        return;
+    }    
     itemQuantities[10] -= 1;
     dirtyChaiQuantity.innerHTML = itemQuantities[10];
+    
 });
 
 // irish coffee
@@ -190,6 +224,9 @@ irishCoffeeIncrement.addEventListener('click', function (event) {
 });
 
 irishCoffeeDecrement.addEventListener('click', function (event) {
+    if (itemQuantities[11] == 0) {
+        return;
+    }
     itemQuantities[11] -= 1;
     irishCoffeeQuantity.innerHTML = itemQuantities[11];
 });
