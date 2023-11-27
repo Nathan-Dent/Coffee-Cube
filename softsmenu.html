@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styling.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=KoHo">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Inter">
+    <title>Softs - Coffee Cube</title>
+</head>
+<header class="shopping-header">
+    <div class="logobox">
+        <img src="./assets/coffeecube_logo symbols.png">
+    </div>
+    <div class="title-container">
+        <h1>Menu</h1>
+    </div>
+    <nav class="language-button">
+        <ul>
+            <li class="dropdown">
+                <a href = "#">Language | Jazyk</a>
+                <ul  class = "dropdown-menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Čeština</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <div id="cart-button">
+        <a href = "#">Cart</a>
+    </div>
+</header>
+<body>
+    <div class="shopping-interface">
+        <div class="sidebar">
+            <div class="sidebar-main">
+                <div class="drink-title">
+                    <h1>Drinks</h1>
+                </div>
+                <div class="drink-sections">
+                    <ul>
+                        <li><a href="#">Coffee</a></li>
+                        <li><a href="#">Hot Drinks</a></li>
+                        <li><a href="#">Iced</a></li>
+                        <li><a href="#">Softs</a></li>
+                        <li><a href="#">Alcohol</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="menubox">
+            <table>
+                <tr>
+                    <th>Softs</th>
+                </tr>
+                <tr>
+                    <td class="menu-item"><a href="#" id="ginger-lemonade">Ginger Lemonade</a></td>
+                    <td>70</td>
+                    <td>
+                        <div class="increment-tool">
+                            <div class="minus"><p><a href="#" id="ginger-lemonade-minus">-</a></p></div>
+                            <div class="quant"><p id="ginger-lemonade-quant">0</p></div>
+                            <div class="plus"><p><a href="#" id="ginger-lemonade-plus">+</a></p></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="menu-item"><a href="#" id="pineapple-lemonade">Pineapple Lemonade</a></td>
+                    <td>70</td>
+                    <td>
+                        <div class="increment-tool">
+                            <div class="minus"><p><a href="#" id="pineapple-lemonade-minus">-</a></p></div>
+                            <div class="quant"><p id="pineapple-lemonade-quant">0</p></div>
+                            <div class="plus"><p><a href="#" id="pineapple-lemonade-plus">+</a></p></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="menu-item"><a href="#" id="sea-salt-lemonade">Sea Salt Lemonade</a></td>
+                    <td>70</td>
+                    <td>
+                        <div class="increment-tool">
+                            <div class="minus"><p><a href="#" id="sea-salt-lemonade-minus">-</a></p></div>
+                            <div class="quant"><p id="sea-salt-lemonade-quant">0</p></div>
+                            <div class="plus"><p><a href="#" id="sea-salt-lemonade-plus">+</a></p></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="menu-item"><a href="#" id="cascara">Cascara</a></td>
+                    <td>70</td>
+                    <td>
+                        <div class="increment-tool">
+                            <div class="minus"><p><a href="#" id="cascara-minus">-</a></p></div>
+                            <div class="quant"><p id="cascara-quant">0</p></div>
+                            <div class="plus"><p><a href="#" id="cascara-plus">+</a></p></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<script src="softsincrementer.js"></script>
