@@ -134,6 +134,7 @@ a:hover {
     font-size: 40px;
     color: white;
     box-shadow: 0px 6px 6px 0px #767676;
+    cursor: pointer;
 }
 
 button:hover {
@@ -149,6 +150,14 @@ button:hover {
 }
 
 .logobox {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.logobox a {
     grid-column: 1;
     display: flex;
     align-items: center;
@@ -267,6 +276,89 @@ button:hover {
     margin-right: 30px;
 }
 
+.popup {
+    position: absolute;
+    height: 600px;
+    width: 75vw;
+    z-index: 3;
+    left: 12.5%;
+    background-color: white;
+    border: 1px solid #767676;
+    border-radius: 16px;
+    box-shadow: 0px 0px 12px 1px;
+    display: none;
+    grid-template-rows: 1fr 3fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.item-name {
+    grid-row: 1;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.size-options {
+    grid-row: 2;
+    margin-bottom: 5px;
+}
+
+.underline {
+    height: 10px;
+    width: 200px;
+    background-color: #96663B;
+    opacity: 39%;
+    border-radius: 25px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selection {
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    cursor: pointer;
+}
+
+.selection p {
+    margin-left: 20px;
+}
+
+.drop-arrow {
+    grid-column: 2;
+}
+
+.add-to-cart {
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.add-to-cart .movement-button {
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.exit {
+    position: absolute;
+    z-index: 4;
+    font-size: xx-large;
+    font-weight: bolder;
+    left: 95%;
+    top: 15px;
+    cursor: pointer;
+}
+
 /* CSS for Sub-Menus (Coffee, Iced, Etc.) begins here */
 
 .increment-tool {
@@ -333,7 +425,7 @@ button:hover {
 }
 
 .menubox table th {
-    font-size: xx-large;
+    font-size: x-large;
     text-align: left;
     border-bottom: 1px solid black;
 }
