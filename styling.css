@@ -13,6 +13,10 @@ header {
     padding: 10px 0;
 }
 
+.shopping-header-mobile {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -559,5 +563,29 @@ button:hover {
         font-weight: bolder;
     }
 
+    .increment-tool {
+        display: none;
+    }
 
+    .shopping-header {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .shopping-interface {
+        display: block;
+    }
+
+    .shopping-header-mobile {
+        display: block;
+        background-color: white;
+        color: black;
+    }
+
+    table {
+        border-spacing: 20px;
+    }
 }
