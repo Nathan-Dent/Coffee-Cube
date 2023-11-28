@@ -1,0 +1,471 @@
+* {
+    font-family: "KoHo";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+}
+
+.dropdown-hours {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-menu-hours {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    padding: 5px;
+}
+
+.dropdown-menu-hours li {
+    padding: 5px;
+}
+
+.dropdown-menu-hours li:nth-child(2) {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu-hours li strong {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-hours:hover .dropdown-menu-hours {
+    display: block;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container div {
+    text-align: center;
+}
+
+#mainlogo {
+    padding-top: 50px;
+}
+
+#addresses {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#addresses p {
+    margin-bottom: 20px;
+}
+
+.movement-button {
+    margin: 30px;
+    background-color: #C3A88F;
+    border-radius: 16px;
+    width: 410px;
+    height: 94px;
+    border: none;
+    
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    box-shadow: 0px 6px 6px 0px #767676;
+}
+
+button:hover {
+    background-color: #96663B;
+    box-shadow: none;
+}
+
+/* ----- MAIN-MENU-SPECIFIC STYLING BEGINS HERE ----- */
+.shopping-header {
+    display: grid;
+    grid-template-columns: 20% 60% 15% 5%;
+    grid-template-rows: 100%;
+}
+
+.logobox {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.logobox img {
+    width: 50%;
+}
+
+.title-container {
+    font-size: xx-large;
+    padding-left: 68px;
+    
+}
+
+.shopping-header h1 {
+    grid-column: 2;
+    }
+
+.language-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3;
+}
+
+.language-button ul {
+    justify-content: end;
+    padding: 0px;
+}
+
+.language-button ul:first-of-type(a) {
+    padding-right: 10px;
+}
+
+#cart-button {
+    grid-column: 4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-interface {
+    display: grid;
+    gap: 68px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 600px;
+}
+
+.sidebar {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 6fr;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.drink-title {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.drink-sections {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.drink-sections ul {
+    list-style: none;
+    padding-left: 0px;
+    line-height: 100px;
+    font-size: large;
+}
+
+.menubox {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.sectionbox {
+    width: 348px;
+    height: 173px;
+    border-radius: 16px;
+    margin: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 100%;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionbox:hover {
+    background-color: #b8b8b8;
+}
+
+.sectionbox img {
+    grid-column: 1;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 16px;
+}
+
+.sectionbox p {
+    grid-column: 2;
+    font-size: x-large;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* CSS for Sub-Menus (Coffee, Iced, Etc.) begins here */
+
+.increment-tool {
+    width: 70px;
+    height: 20px;
+    border-radius: 25px;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    font-size: medium;
+
+}
+
+.increment-tool div p {
+    margin: 0px;
+    text-align: center;
+}
+
+.increment-tool .minus {
+    grid-column: 1;
+}
+
+.increment-tool #quant {
+    grid-column: 2;
+    border-left: 1px solid #7676765f;
+    border-right: 1px solid #7676765f;
+}
+
+.plus {
+    grid-column: 3;
+}
+
+.plus a:hover {
+    text-decoration: none;
+}
+
+.minus a:hover {
+    text-decoration: none;
+}
+
+.minus {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.plus {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.quant {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.plus:hover, .minus:hover {
+    background-color: #7676765f;
+}
+
+.menubox table {
+    width: 100%;
+}
+
+.menubox table th {
+    font-size: xx-large;
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+
+.menubox table tr:hover .menu-item {
+    text-decoration: underline;
+}
+
+/* MOBILE ADJUSTMENTS */
+@media screen and (min-width: 1000px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header nav {
+        display: none;
+    }
+
+    .logo {
+        width: 90vw;
+    }
+
+    #order-online {
+        width: 70vw
+    }
+
+    .hamburger {
+        padding: 15px 15px;
+        display: inline-block;
+        cursor: pointer;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        outline: none;
+        z-index: 9999;
+        display: block;
+      }
+    
+    .hamburger.is-active .hamburger-inner {
+        bottom: 0;
+        transform: translate(0, -10px) rotate(-45deg);
+      }
+    
+    .hamburger.is-active .hamburger-inner::before {
+        top: 0;
+        transform: rotate(-90deg);
+      }
+    
+    .hamburger-box {
+        width: 30px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+      }
+    
+    .hamburger-box::before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+      }
+    
+    .hamburger-inner {
+        display: block;
+        top: auto;
+        bottom: 5px;
+      }
+    
+    .hamburger-inner,
+    .hamburger-inner::before {
+        width: 30px;
+        height: 3px;
+        background-color: #351f16;
+        border-radius: 0;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+      }
+    
+    .hamburger-inner::before {
+        content: "";
+        display: block;
+        top: -10px;
+      }
+    
+    #the-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #C3A88F;
+        z-index: -99;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        padding-bottom: 90px;
+
+    }
+
+    #the-menu.is-active {
+        z-index: 9990;
+        opacity: 1;
+        transform: translateY(0%);
+        padding: 0px;
+    }
+
+    #the-menu ul {
+        flex-direction: column;
+        align-items: center;
+
+        height: 100vh;
+        padding: 50px;
+    }
+
+    #the-menu ul a {
+        color: white;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+
+
+}
