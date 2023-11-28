@@ -15,7 +15,7 @@ nav ul {
 
 .language-button a, #cart-button a {
     text-decoration: none;
-    color: black; /* Change the color to your desired color */
+    color: black; 
     cursor: pointer;
 }
 
