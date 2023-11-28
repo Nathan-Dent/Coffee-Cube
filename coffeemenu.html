@@ -12,7 +12,9 @@
 </head>
 <header class="shopping-header">
     <div class="logobox">
-        <img src="./assets/coffeecube_logo symbols.png">
+        <a href="index.html">
+            <img src="./assets/coffeecube_logo symbols.png">
+        </a>
     </div>
     <div class="title-container">
         <h1>Menu</h1>
@@ -34,6 +36,562 @@
     </div>
 </header>
 <body>
+    <!--ESPRESSO POPUP-->
+    <div class="popup" id="espresso-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Espresso</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--DOUBLE ESPRESSO POPUP-->
+    <div class="popup" id="double-espresso-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Double Espresso</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--AMERICANO POPUP-->
+    <div class="popup" id="americano-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Americano</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--BATCH BREW POPUP-->
+    <div class="popup" id="batch-brew-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Batch Brew</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                    <p>Large</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--V60 POPUP-->
+    <div class="popup" id="v60-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>V60</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--MACCHIATO POPUP-->
+    <div class="popup" id="macchiato-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Macchiato</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--CAPPUCCINO POPUP-->
+    <div class="popup" id="cappuccino-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Cappuccino</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--LATTE POPUP-->
+    <div class="popup" id="latte-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Latte</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                    <p>Large</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--FLAT WHITE POPUP-->
+    <div class="popup" id="flat-white-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Flat White</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--MOCHA POPUP-->
+    <div class="popup" id="mocha-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Mocha</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                    <p>Large</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--DIRTY CHAI POPUP-->
+    <div class="popup" id="dirty-chai-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Dirty Chai</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                    <p>Large</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
+    <!--IRISH COFFEE POPUP-->
+    <div class="popup" id="irish-coffee-popup">
+        <div class="exit">X</div>
+        <div class="item-name">
+            <h2>Irish Coffee</h2>
+        </div>
+        <div class="options-container">
+            <div class="size-options">
+                <h2>Size Options</h2>
+                <div class="underline"></div>
+                <div class="size-selector">
+                    <p>Regular</p>
+                </div>
+            </div>
+            <div class="modifications">
+                <h2>Modifications</h2>
+                <div class="underline"></div>
+                <div class="add-ins">
+                    <p class="option-label">Add-ins</p>
+                    <div class="selection">
+                        <p>Water</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="blend">
+                    <p class="option-label">Blend</p>
+                    <div class="selection">
+                        <p>Signature Espresso Roast</p>
+                        <p class="drop-arrow">⌄</p>
+                    </div>
+                </div>
+                <div class="shot-quantity">
+                    <p class="option-label">Shots</p>
+                    <div class="increment-tool">
+                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
+                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
+                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-to-cart">
+            <button class="movement-button">Add to Cart</button>
+        </div>
+    </div>
+
     <div class="shopping-interface">
         <div class="sidebar">
             <div class="sidebar-main">
@@ -42,10 +600,10 @@
                 </div>
                 <div class="drink-sections">
                     <ul>
-                        <li><a href="#">Coffee</a></li>
-                        <li><a href="#">Hot Drinks</a></li>
-                        <li><a href="#">Iced</a></li>
-                        <li><a href="#">Softs</a></li>
+                        <li><a href="./coffeemenu.html">Coffee</a></li>
+                        <li><a href="./hotdrinksmenu.html">Hot Drinks</a></li>
+                        <li><a href="./icedmenu.html">Iced</a></li>
+                        <li><a href="./softsmenu.html">Softs</a></li>
                         <li><a href="#">Alcohol</a></li>
                     </ul>
                 </div>
@@ -194,3 +752,4 @@
 </body>
 </html>
 <script src="incrementer.js"></script>
+<script src="popupconfig.js"></script>
