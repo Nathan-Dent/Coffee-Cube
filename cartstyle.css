@@ -1,6 +1,54 @@
 * {
     font-family: "KoHo";
 }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+}
+
+.language-button a, #cart-button a {
+    text-decoration: none;
+    color: black; /* Change the color to your desired color */
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-menu li {
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+#cart-button {
+    grid-column: 4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
 
 .logobox img {
     width: 100px;
@@ -70,9 +118,19 @@ hr.half-line {
     margin-bottom: 10px;
 
 }
-.storepickup-title h2 {
-    margin-bottom: 5px; 
-}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+ }
+
+
+
 @media screen and (max-width: 600px) {
     .logobox img {
         width: 80px;
