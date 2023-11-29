@@ -10,6 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add a marker to the map
     L.marker([50.088542797779034, 14.426695468126846]).addTo(map)
-        .bindPopup('Coffee Cube - Your Location')
+        .bindPopup('Coffee Cube - Old Town')
         .openPopup();
 });

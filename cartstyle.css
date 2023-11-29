@@ -48,6 +48,11 @@ nav ul {
 
 /*above is code for the navigation bar*/
 
+
+main {
+    margin-bottom: 100px; 
+}
+
 .logobox img {
     width: 100px;
     height: auto;
@@ -58,12 +63,22 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    
 }
 
-.title-container {
+.logobox h1 {
+    margin-bottom: 5px; /* Adjust the margin to your preference */
+}
+
+.logobox p {
+    margin: 0; /* Remove default margins for the paragraph */
+}
+
+.box {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 20px;
+    flex-direction: row-reverse;
 }
 
 
@@ -74,25 +89,24 @@ hr.half-line {
     border: none;
     border-top: 5px solid tan;
     border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
 }
-
-.location-title {
-    width: 50%; 
-    box-sizing: border-box; 
-}
-
 
 #map {
+    flex: 1;
     height: 400px;
-    width: 50%;
 
 }
 
 .storepickup-title {
     display: flex;
+    flex: 1;
+    padding: 20px;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 10px;
+    justify-content: center;
 
 }
 
@@ -100,12 +114,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
  }
-
 
 
 @media screen and (max-width: 600px) {
