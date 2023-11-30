@@ -471,6 +471,11 @@ hr.half-line {
     .hamburger {
         display: none;
     }
+    .shopping-header {
+        flex-direction: column; /* Change to a column layout */
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 1000px) {
