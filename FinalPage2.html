@@ -4,36 +4,41 @@
 
 <head>
     <title>Order Placed - Coffee Cube</title>
-    <link rel="stylesheet" href="./cartstyle.css">
+    <link rel="stylesheet" href="./styling.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 
 <body>
-    <header class="shopping-header">
 
+    <header class="shopping-header">
+        <div class="logobox">
+            <a href="index.html">
+                <img src="./assets/coffeecube_logo symbols.png">
+            </a>
+        </div>
+        <div class="title-container">
+            <h2>See you soon!</h2>
+            <p style="font-size: 20px;">Estimated Pickup: 9:30am</p>
+        </div>
         <nav class="language-button">
             <ul>
                 <li class="dropdown">
-                    <a href="#">Language | Jazyk</a>
-                    <ul class="dropdown-menu">
+                    <a href = "#">Language | Jazyk</a>
+                    <ul  class = "dropdown-menu">
                         <li><a href="#">English</a></li>
                         <li><a href="#">Čeština</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
+        </div>
         <div id="cart-button">
-            <a href="#">Cart</a>
+            <a href = "#">Cart</a>
         </div>
-
-        <div class="logobox">
-            <img src="./assets/coffeecube_logo symbols.png">
-            <h1>See you soon!</h1>
-            <p> Estimated pickup: 9:30am </p>
-        </div>
-
     </header>
+       
+
 
     <main>
         <hr class="half-line">
