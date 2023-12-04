@@ -473,6 +473,21 @@ hr.half-line {
 
 /*Final Page ends*/
 
+/*CSS for cart page*/
+.biggestbox{
+    display: flex;
+}
+.reviewbox{
+    display: flex;
+    background-color: #96663B;
+
+}
+.coffeebox{
+    display: flex;
+    background-color:white
+}
+
+
 /* MOBILE ADJUSTMENTS */
 @media screen and (min-width: 1000px) {
     .hamburger {
@@ -708,17 +723,4 @@ hr.half-line {
     table {
         border-spacing: 20px;
     }
-}
-/*CSS for cart page*/
-.biggestbox{
-    display: flex;
-}
-.reviewbox{
-    display: flex;
-    background-color: #96663B;
-
-}
-.coffeebox{
-    display: flex;
-    background-color:white
 }
