@@ -709,3 +709,16 @@ hr.half-line {
         border-spacing: 20px;
     }
 }
+/*CSS for cart page*/
+.biggestbox{
+    display: flex;
+}
+.reviewbox{
+    display: flex;
+    background-color: #96663B;
+
+}
+.coffeebox{
+    display: flex;
+    background-color:white
+}
