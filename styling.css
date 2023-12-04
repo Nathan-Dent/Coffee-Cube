@@ -341,3 +341,16 @@ button:hover {
 .menubox table tr:hover .menu-item {
     text-decoration: underline;
 }
+/*CSS for cart page*/
+.biggestbox{
+    display: flex;
+}
+.reviewbox{
+    display: flex;
+    background-color: #96663B;
+
+}
+.coffeebox{
+    display: flex;
+    background-color:white
+}
