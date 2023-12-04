@@ -146,6 +146,13 @@ a:hover {
     box-shadow: none;
 }
 
+.movement-container {
+    display: none;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 50px;
+}
+
 /* ----- MAIN-MENU-SPECIFIC STYLING BEGINS HERE ----- */
 .shopping-header {
     display: grid;
@@ -211,7 +218,6 @@ a:hover {
     gap: 68px;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 600px;
-    padding-bottom: 50px;
 }
 
 .sidebar {
@@ -643,6 +649,10 @@ hr.half-line {
         padding-top: 120px;
     }
     
+    .movement-container {
+        display: flex;
+    }
+
     .hamburger {
         grid-column: 1;
         grid-row: 1;
