@@ -1,414 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styling.css" rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=KoHo">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KoHo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <title>Hot Drinks - Coffee Cube</title>
 </head>
-<header class="shopping-header">
-    <div class="logobox">
-        <a href="index.html">
-            <img src="./assets/coffeecube_logo symbols.png">
-        </a>
-    </div>
-    <div class="title-container">
-        <h1>Menu</h1>
-    </div>
-    <nav class="language-button">
-        <ul>
-            <li class="dropdown">
-                <a href = "#">Language | Jazyk</a>
-                <ul  class = "dropdown-menu">
+
+<body>
+    <header class="shopping-header">
+        <div class="logobox">
+            <a href="index.html">
+                <img src="./assets/coffeecube_logo symbols.png">
+            </a>
+        </div>
+        <div class="title-container">
+            <h1>Menu</h1>
+        </div>
+        <nav class="language-button">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Language | Jazyk</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Čeština</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <div id="cart-button">
+            <a href="#">Cart</a>
+        </div>
+    </header>
+    <header class="shopping-header-mobile">
+        <div class="logobox">
+            <a href="index.html">
+                <img src="./assets/coffeecube_logo symbols.png">
+            </a>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div id="mobile-nav-links">
+            <a href="./index.html" class="mobile-menu-item">Home</a>
+            <a href="#" class="mobile-menu-item">Cart</a> <!-- MODIFY WHEN CART EXISTS! -->
+            <a href="#" class="mobile-menu-item">Hours</a> <!--- MODIFY WHEN MOBILE HOURS PAGE EXISTS! -->
+            <li class="dropdown mobile-menu-item">
+                <a href="#" id="language-button">Language | Jazyk</a>
+                <ul class="dropdown-menu">
                     <li><a href="#">English</a></li>
                     <li><a href="#">Čeština</a></li>
                 </ul>
             </li>
-        </ul>
-    </nav>
-    </div>
-    <div id="cart-button">
-        <a href = "#">Cart</a>
-    </div>
-</header>
-<body>
-
-     <!--CHAI LATTE POPUP-->
-     <div class="popup" id="chai-latte-popup">
-        <div class="exit">X</div>
-        <div class="item-name">
-            <h2>Chai Latte</h2>
         </div>
-        <div class="options-container">
-            <div class="size-options">
-                <h2>Size Options</h2>
-                <div class="underline"></div>
-                <div class="size-selector">
-                    <p>Regular</p>
-                    <p>Large</p>
-                </div>
+    </header>
+    <main>
+        <!--CHAI LATTE POPUP-->
+        <div class="popup" id="chai-latte-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Chai Latte</h2>
             </div>
-            <div class="modifications">
-                <h2>Modifications</h2>
-                <div class="underline"></div>
-                <div class="add-ins">
-                    <p class="option-label">Add-ins</p>
-                    <div class="selection">
-                        <p>Water</p>
-                        <p class="drop-arrow">⌄</p>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Size Options</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Regular</p>
+                        <p>Large</p>
                     </div>
                 </div>
-                <div class="blend">
-                    <p class="option-label">Blend</p>
-                    <div class="selection">
-                        <p>Signature Espresso Roast</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="shot-quantity">
-                    <p class="option-label">Shots</p>
-                    <div class="increment-tool">
-                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
-                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
-                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="add-to-cart">
-            <button class="movement-button">Add to Cart</button>
-        </div>
-    </div>
-
-     <!--MATCHA LATTE POPUP-->
-     <div class="popup" id="matcha-latte-popup">
-        <div class="exit">X</div>
-        <div class="item-name">
-            <h2>Matcha Latte</h2>
-        </div>
-        <div class="options-container">
-            <div class="size-options">
-                <h2>Size Options</h2>
-                <div class="underline"></div>
-                <div class="size-selector">
-                    <p>Regular</p>
-                    <p>Large</p>
-                </div>
-            </div>
-            <div class="modifications">
-                <h2>Modifications</h2>
-                <div class="underline"></div>
-                <div class="add-ins">
-                    <p class="option-label">Add-ins</p>
-                    <div class="selection">
-                        <p>Water</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="blend">
-                    <p class="option-label">Blend</p>
-                    <div class="selection">
-                        <p>Signature Espresso Roast</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="shot-quantity">
-                    <p class="option-label">Shots</p>
-                    <div class="increment-tool">
-                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
-                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
-                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="add-to-cart">
-            <button class="movement-button">Add to Cart</button>
-        </div>
-    </div>
-
-     <!--GOLDEN MILK POPUP-->
-     <div class="popup" id="golden-milk-popup">
-        <div class="exit">X</div>
-        <div class="item-name">
-            <h2>Golden Milk</h2>
-        </div>
-        <div class="options-container">
-            <div class="size-options">
-                <h2>Size Options</h2>
-                <div class="underline"></div>
-                <div class="size-selector">
-                    <p>Regular</p>
-                    <p>Large</p>
-                </div>
-            </div>
-            <div class="modifications">
-                <h2>Modifications</h2>
-                <div class="underline"></div>
-                <div class="add-ins">
-                    <p class="option-label">Add-ins</p>
-                    <div class="selection">
-                        <p>Water</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="blend">
-                    <p class="option-label">Blend</p>
-                    <div class="selection">
-                        <p>Signature Espresso Roast</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="shot-quantity">
-                    <p class="option-label">Shots</p>
-                    <div class="increment-tool">
-                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
-                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
-                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="add-to-cart">
-            <button class="movement-button">Add to Cart</button>
-        </div>
-    </div>
-
-     <!--HOT CHOCOLATE POPUP-->
-     <div class="popup" id="hot-chocolate-popup">
-        <div class="exit">X</div>
-        <div class="item-name">
-            <h2>Hot Chocolate</h2>
-        </div>
-        <div class="options-container">
-            <div class="size-options">
-                <h2>Size Options</h2>
-                <div class="underline"></div>
-                <div class="size-selector">
-                    <p>Regular</p>
-                    <p>Large</p>
-                </div>
-            </div>
-            <div class="modifications">
-                <h2>Modifications</h2>
-                <div class="underline"></div>
-                <div class="add-ins">
-                    <p class="option-label">Add-ins</p>
-                    <div class="selection">
-                        <p>Water</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="blend">
-                    <p class="option-label">Blend</p>
-                    <div class="selection">
-                        <p>Signature Espresso Roast</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="shot-quantity">
-                    <p class="option-label">Shots</p>
-                    <div class="increment-tool">
-                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
-                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
-                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="add-to-cart">
-            <button class="movement-button">Add to Cart</button>
-        </div>
-    </div>
-
-     <!--FRESH GINGER TEA POPUP-->
-     <div class="popup" id="fresh-ginger-tea-popup">
-        <div class="exit">X</div>
-        <div class="item-name">
-            <h2>Fresh Ginger Tea</h2>
-        </div>
-        <div class="options-container">
-            <div class="size-options">
-                <h2>Size Options</h2>
-                <div class="underline"></div>
-                <div class="size-selector">
-                    <p>Regular</p>
-                </div>
-            </div>
-            <div class="modifications">
-                <h2>Modifications</h2>
-                <div class="underline"></div>
-                <div class="add-ins">
-                    <p class="option-label">Add-ins</p>
-                    <div class="selection">
-                        <p>Water</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="blend">
-                    <p class="option-label">Blend</p>
-                    <div class="selection">
-                        <p>Signature Espresso Roast</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="shot-quantity">
-                    <p class="option-label">Shots</p>
-                    <div class="increment-tool">
-                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
-                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
-                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="add-to-cart">
-            <button class="movement-button">Add to Cart</button>
-        </div>
-    </div>
-
-     <!--PREMIUM TEA POPUP-->
-     <div class="popup" id="premium-tea-popup">
-        <div class="exit">X</div>
-        <div class="item-name">
-            <h2>Premium Tea</h2>
-        </div>
-        <div class="options-container">
-            <div class="size-options">
-                <h2>Size Options</h2>
-                <div class="underline"></div>
-                <div class="size-selector">
-                    <p>Regular</p>
-                </div>
-            </div>
-            <div class="modifications">
-                <h2>Modifications</h2>
-                <div class="underline"></div>
-                <div class="add-ins">
-                    <p class="option-label">Add-ins</p>
-                    <div class="selection">
-                        <p>Water</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="blend">
-                    <p class="option-label">Blend</p>
-                    <div class="selection">
-                        <p>Signature Espresso Roast</p>
-                        <p class="drop-arrow">⌄</p>
-                    </div>
-                </div>
-                <div class="shot-quantity">
-                    <p class="option-label">Shots</p>
-                    <div class="increment-tool">
-                        <div class="minus"><p><a href="#" id="espresso-shots-minus">-</a></p></div>
-                        <div class="quant"><p id="espresso-shots-quant">1</p></div>
-                        <div class="plus"><p><a href="#" id="espresso-shots-plus">+</a></p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="add-to-cart">
-            <button class="movement-button">Add to Cart</button>
-        </div>
-    </div>
-
-    <div class="shopping-interface">
-        <div class="sidebar">
-            <div class="sidebar-main">
-                <div class="drink-title">
-                    <h1>Drinks</h1>
-                </div>
-                <div class="drink-sections">
-                    <ul>
-                        <li><a href="./coffeemenu.html">Coffee</a></li>
-                        <li><a href="./hotdrinksmenu.html">Hot Drinks</a></li>
-                        <li><a href="./icedmenu.html">Iced</a></li>
-                        <li><a href="./softsmenu.html">Softs</a></li>
-                        <li><a href="#">Alcohol</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="menubox">
-            <table>
-                <tr>
-                    <th>Hot Drinks</th>
-                </tr>
-                <tr>
-                    <td class="menu-item"><a href="#" id="chai-latte">Chai Latte</a></td>
-                    <td>75/90</td>
-                    <td>
-                        <div class="increment-tool">
-                            <div class="minus"><p><a href="#" id="chai-latte-minus">-</a></p></div>
-                            <div class="quant"><p id="chai-latte-quant">0</p></div>
-                            <div class="plus"><p><a href="#" id="chai-latte-plus">+</a></p></div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Add-ins</p>
+                        <div class="selection">
+                            <p>Water</p>
+                            <p class="drop-arrow">⌄</p>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="menu-item"><a href="#" id="matcha-latte">Matcha Latte</a></td>
-                    <td>85/100</td>
-                    <td>
-                        <div class="increment-tool">
-                            <div class="minus"><p><a href="#" id="matcha-latte-minus">-</a></p></div>
-                            <div class="quant"><p id="matcha-latte-quant">0</p></div>
-                            <div class="plus"><p><a href="#" id="matcha-latte-plus">+</a></p></div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Blend</p>
+                        <div class="selection">
+                            <p>Signature Espresso Roast</p>
+                            <p class="drop-arrow">⌄</p>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="menu-item"><a href="#" id="golden-milk">Golden Milk</a></td>
-                    <td>85/100</td>
-                    <td>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Shots</p>
                         <div class="increment-tool">
-                            <div class="minus"><p><a href="#" id="golden-milk-minus">-</a></p></div>
-                            <div class="quant"><p id="golden-milk-quant">0</p></div>
-                            <div class="plus"><p><a href="#" id="golden-milk-plus">+</a></p></div>
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
                         </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="menu-item"><a href="#" id="hot-chocolate">Hot Chocolate</a></td>
-                    <td>70/85</td>
-                    <td>
-                        <div class="increment-tool">
-                            <div class="minus"><p><a href="#" id="hot-chocolate-minus">-</a></p></div>
-                            <div class="quant"><p id="hot-chocolate-quant">0</p></div>
-                            <div class="plus"><p><a href="#" id="hot-chocolate-plus">+</a></p></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="menu-item"><a href="#" id="fresh-ginger-tea">Fresh Ginger Tea</a></td>
-                    <td>70</td>
-                    <td>
-                        <div class="increment-tool">
-                            <div class="minus"><p><a href="#" id="fresh-ginger-tea-minus">-</a></p></div>
-                            <div class="quant"><p id="fresh-ginger-tea-quant">0</p></div>
-                            <div class="plus"><p><a href="#" id="fresh-ginger-tea-plus">+</a></p></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="menu-item"><a href="#" id="premium-tea">Premium Tea</a></td>
-                    <td>70</td>
-                    <td>
-                        <div class="increment-tool">
-                            <div class="minus"><p><a href="#" id="premium-tea-minus">-</a></p></div>
-                            <div class="quant"><p id="premium-tea-quant">0</p></div>
-                            <div class="plus"><p><a href="#" id="premium-tea-plus">+</a></p></div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Add to Cart</button>
+            </div>
         </div>
-    </div>
+
+        <!--MATCHA LATTE POPUP-->
+        <div class="popup" id="matcha-latte-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Matcha Latte</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Size Options</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Regular</p>
+                        <p>Large</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Add-ins</p>
+                        <div class="selection">
+                            <p>Water</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Blend</p>
+                        <div class="selection">
+                            <p>Signature Espresso Roast</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Shots</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Add to Cart</button>
+            </div>
+        </div>
+
+        <!--GOLDEN MILK POPUP-->
+        <div class="popup" id="golden-milk-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Golden Milk</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Size Options</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Regular</p>
+                        <p>Large</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Add-ins</p>
+                        <div class="selection">
+                            <p>Water</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Blend</p>
+                        <div class="selection">
+                            <p>Signature Espresso Roast</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Shots</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Add to Cart</button>
+            </div>
+        </div>
+
+        <!--HOT CHOCOLATE POPUP-->
+        <div class="popup" id="hot-chocolate-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Hot Chocolate</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Size Options</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Regular</p>
+                        <p>Large</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Add-ins</p>
+                        <div class="selection">
+                            <p>Water</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Blend</p>
+                        <div class="selection">
+                            <p>Signature Espresso Roast</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Shots</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Add to Cart</button>
+            </div>
+        </div>
+
+        <!--FRESH GINGER TEA POPUP-->
+        <div class="popup" id="fresh-ginger-tea-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Fresh Ginger Tea</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Size Options</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Regular</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Add-ins</p>
+                        <div class="selection">
+                            <p>Water</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Blend</p>
+                        <div class="selection">
+                            <p>Signature Espresso Roast</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Shots</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Add to Cart</button>
+            </div>
+        </div>
+
+        <!--PREMIUM TEA POPUP-->
+        <div class="popup" id="premium-tea-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Premium Tea</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Size Options</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Regular</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Add-ins</p>
+                        <div class="selection">
+                            <p>Water</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Blend</p>
+                        <div class="selection">
+                            <p>Signature Espresso Roast</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Shots</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="shopping-interface">
+            <div class="sidebar">
+                <div class="sidebar-main">
+                    <div class="drink-title">
+                        <h1>Drinks</h1>
+                    </div>
+                    <div class="drink-sections">
+                        <ul>
+                            <li><a href="./coffeemenu.html">Coffee</a></li>
+                            <li><a href="./hotdrinksmenu.html">Hot Drinks</a></li>
+                            <li><a href="./icedmenu.html">Iced</a></li>
+                            <li><a href="./softsmenu.html">Softs</a></li>
+                            <li><a href="#">Alcohol</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menubox">
+                <table>
+                    <tr>
+                        <th>Hot Drinks</th>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="chai-latte">Chai Latte</a></td>
+                        <td>75/90</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="chai-latte-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="chai-latte-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="chai-latte-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="matcha-latte">Matcha Latte</a></td>
+                        <td>85/100</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="matcha-latte-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="matcha-latte-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="matcha-latte-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="golden-milk">Golden Milk</a></td>
+                        <td>85/100</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="golden-milk-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="golden-milk-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="golden-milk-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="hot-chocolate">Hot Chocolate</a></td>
+                        <td>70/85</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="hot-chocolate-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="hot-chocolate-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="hot-chocolate-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="fresh-ginger-tea">Fresh Ginger Tea</a></td>
+                        <td>70</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="fresh-ginger-tea-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="fresh-ginger-tea-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="fresh-ginger-tea-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="premium-tea">Premium Tea</a></td>
+                        <td>70</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="premium-tea-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="premium-tea-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="premium-tea-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <a href="./mainmenu.html">
+                    <button class="movement-button">Back to Menu</button>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><a href="./terms-and-conditions.html">Terms & Conditions</a> | <a href="./gdpr.html">GDPR</a></p>
+    </footer>
 </body>
+
 </html>
 <script src="hotdrinksincrementer.js"></script>
 <script src="hotdrinkspopupconfig.js"></script>
+<script src="mobilemenutoggle.js"></script>

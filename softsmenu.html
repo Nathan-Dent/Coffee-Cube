@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css?family=Inter">
     <title>Softs - Coffee Cube</title>
 </head>
+<body>
 <header class="shopping-header">
     <div class="logobox">
         <a href="index.html">
@@ -35,7 +36,31 @@
         <a href = "#">Cart</a>
     </div>
 </header>
-<body>
+<header class="shopping-header-mobile">
+    <div class="logobox">
+        <a href="index.html">
+            <img src="./assets/coffeecube_logo symbols.png">
+        </a>
+    </div>
+    <button class="hamburger" id="hamburger">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <div id="mobile-nav-links">
+        <a href="./index.html" class="mobile-menu-item">Home</a>
+        <a href="#" class="mobile-menu-item">Cart</a> <!-- MODIFY WHEN CART EXISTS! -->
+        <a href="#" class="mobile-menu-item">Hours</a> <!--- MODIFY WHEN MOBILE HOURS PAGE EXISTS! -->
+        <li class="dropdown mobile-menu-item">
+            <a href = "#" id="language-button">Language | Jazyk</a>
+            <ul  class = "dropdown-menu">
+                <li><a href="#">English</a></li>
+                <li><a href="#">Čeština</a></li>
+            </ul>
+        </li>
+    </div>
+</header>
+<main>
     <!--GINGER LEMONADE POPUP-->
     <div class="popup" id="ginger-lemonade-popup">
         <div class="exit">X</div>
@@ -287,9 +312,17 @@
                     </td>
                 </tr>
             </table>
+            <a href="./mainmenu.html">
+                <button class="movement-button">Back to Menu</button>
+            </a>
         </div>
     </div>
+    </main>
+    <footer>
+        <p><a href="./terms-and-conditions.html">Terms & Conditions</a> | <a href="./gdpr.html">GDPR</a></p>
+    </footer>
 </body>
 </html>
 <script src="softsincrementer.js"></script>
 <script src="softspopupconfig.js"></script>
+<script src="mobilemenutoggle.js"></script>

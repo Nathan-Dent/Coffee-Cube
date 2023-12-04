@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-    <title>Order Placed - Coffee Cube</title>
-    <link rel="stylesheet" href="./styling.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=KoHo">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Inter">
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styling.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KoHo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <title>GDPR - Coffee Cube</title>
 </head>
 
 <body>
@@ -21,8 +18,7 @@
             </a>
         </div>
         <div class="title-container">
-            <h2>See you soon!</h2>
-            <p style="font-size: 20px;">Estimated Pickup: 9:30am</p>
+            <h1>GDPR</h1>
         </div>
         <nav class="language-button">
             <ul>
@@ -35,11 +31,7 @@
                 </li>
             </ul>
         </nav>
-        <button class="hamburger" type="button" id="hamburger">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </button>
+        </div>
         <div id="cart-button">
             <a href="#">Cart</a>
         </div>
@@ -60,39 +52,14 @@
             <a href="#" class="mobile-menu-item">Cart</a> <!-- MODIFY WHEN CART EXISTS! -->
             <a href="#" class="mobile-menu-item">Hours</a> <!--- MODIFY WHEN MOBILE HOURS PAGE EXISTS! -->
             <li class="dropdown mobile-menu-item">
-                <a href = "#" id="language-button">Language | Jazyk</a>
-                <ul  class = "dropdown-menu">
+                <a href="#" id="language-button">Language | Jazyk</a>
+                <ul class="dropdown-menu">
                     <li><a href="#">English</a></li>
                     <li><a href="#">Čeština</a></li>
                 </ul>
             </li>
         </div>
     </header>
-
-
-
-    <main>
-        <hr class="half-line">
-
-        <div class="box">
-            <div class="storepickup-title">
-                <h2>Store Pickup:</h2>
-                <p>Old Town: Jakubská 16, 110 00 Staré Město</p>
-                <p>Head to the pickup counter and ask for your order; if you have any questions, ask a barista.</p>
-            </div>
-
-            <div id="map"></div>
-        </div>
-
-    </main>
-
-
-    <footer>
-        <p><a href="./terms-and-conditions.html">Terms & Conditions</a> | <a href="./gdpr.html">GDPR</a></p>
-    </footer>
-
 </body>
 
 </html>
-<script src="./mobilemenutoggle.js"></script> <!-- It does not seem to be running this script-->
-<script src="./scriptfinalpg.js"></script>
