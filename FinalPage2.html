@@ -5,6 +5,11 @@
     <title>Order Placed - Coffee Cube</title>
     <link rel="stylesheet" href="./finalpg.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./styling.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=KoHo">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Inter">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 
@@ -31,11 +36,34 @@
             </ul>
         </nav>
         <div id="cart-button">
-            <a href="#">Cart</a>
+            <a href="./cart.html">Cart</a>
         </div>
 
     </header>
-
+    <header class="shopping-header-mobile">
+        <div class="logobox">
+            <a href="index.html">
+                <img src="./assets/coffeecube_logo symbols.png">
+            </a>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div id="mobile-nav-links">
+            <a href="./index.html" class="mobile-menu-item">Home</a>
+            <a href="./cart.html" class="mobile-menu-item">Cart</a>
+            <a href="#" class="mobile-menu-item">Hours</a> <!--- MODIFY WHEN MOBILE HOURS PAGE EXISTS! -->
+            <li class="dropdown mobile-menu-item">
+                <a href="#" id="language-button">Language | Jazyk</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Čeština</a></li>
+                </ul>
+            </li>
+        </div>
+    </header>
 
 
     <main>
@@ -67,3 +95,4 @@
 </body>
 
 </html>
+<script src="mobilemenutoggle.js"></script>
