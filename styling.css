@@ -445,6 +445,7 @@ a:hover {
     text-decoration: underline;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*CSS for cart page*/
 .biggestbox{
     display: flex;
@@ -461,32 +462,23 @@ a:hover {
 =======
 /*Final Page css begins here*/
 .box {
+=======
+
+/*CSS for cart page*/
+.biggestbox{
+>>>>>>> e267f170e133ecd082ee6f997ce9e9ea098df7e9
     display: flex;
-    margin: 20px;
-    flex-direction: row-reverse;
 }
-hr.half-line {
-    width: 100%;
-    border-top: 5px solid tan;
-    border-radius: 3px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-#map {
-    flex: 1;
-    height: 400px;
-}
-.storepickup-title {
+.reviewbox{
     display: flex;
-    flex: 1;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    background-color: #96663B;
 
 }
+.coffeebox{
+    display: flex;
+    background-color:white
+}
 
-
-/*Final Page ends*/
 
 /* MOBILE ADJUSTMENTS */
 @media screen and (min-width: 1000px) {
@@ -497,6 +489,7 @@ hr.half-line {
         flex-direction: column; /* Change to a column layout */
         text-align: center;
     }
+    
 
 }
 
@@ -724,4 +717,7 @@ hr.half-line {
         border-spacing: 20px;
     }
 }
+<<<<<<< HEAD
 >>>>>>> 69ea55ed914f7c32ef908d2b6a69eecce179125d
+=======
+>>>>>>> e267f170e133ecd082ee6f997ce9e9ea098df7e9

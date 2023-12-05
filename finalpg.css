@@ -1,0 +1,168 @@
+* {
+    font-family: "KoHo";
+}
+
+.box {
+    display: flex;
+    margin: 20px;
+    flex-direction: row-reverse;
+    gap: 40px;
+}
+hr {
+    width: 100%;
+    border-top: 5px solid tan;
+    border-radius: 3px;
+   
+}
+#map {
+    flex: 1;
+    height: 400px;
+    margin-top: 15px;
+    z-index: 0;
+}
+.title-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.shopping-header {
+    margin-bottom: -50px;
+}
+
+.storepickup-title {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+}
+
+@media screen and (min-width: 500px) {
+    .box {
+        flex-wrap: wrap;
+    }
+   
+    .title-container {
+        align-items: center;
+    }
+}
+
+
+/* nathans styling code*/ 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+
+.shopping-header {
+    display: grid;
+    grid-template-columns: 20% 60% 15% 5%;
+    grid-template-rows: 100%;
+}
+
+.logobox img {
+    width: 50%;
+}
+
+.language-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3;
+}
+
+.language-button ul {
+    justify-content: end;
+    padding: 0px;
+}
+
+.language-button ul:first-of-type(a) {
+    padding-right: 10px;
+}
+
+#cart-button {
+    grid-column: 4;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+}
+
+.dropdown-hours {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-menu-hours {
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    padding: 5px;
+}
+
+.dropdown-menu-hours li {
+    padding: 5px;
+}
+
+.dropdown-menu-hours li:nth-child(2) {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu-hours li strong {
+    font-weight: bolder;
+    font-size: large;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-hours:hover .dropdown-menu-hours {
+    display: block;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;  
+ }
+
+
