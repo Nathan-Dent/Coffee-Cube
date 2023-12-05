@@ -437,34 +437,6 @@ button:hover {
 .menubox table tr:hover .menu-item {
     text-decoration: underline;
 }
-/*Final Page css begins here*/
-.box {
-    display: flex;
-    margin: 20px;
-    flex-direction: row-reverse;
-}
-hr.half-line {
-    width: 100%;
-    border-top: 5px solid tan;
-    border-radius: 3px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-#map {
-    flex: 1;
-    height: 400px;
-}
-.storepickup-title {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-
-/*Final Page ends*/
 
 /* MOBILE ADJUSTMENTS */
 @media screen and (min-width: 1000px) {
@@ -475,6 +447,7 @@ hr.half-line {
         flex-direction: column; /* Change to a column layout */
         text-align: center;
     }
+    
 
 }
 
