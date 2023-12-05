@@ -444,8 +444,6 @@ a:hover {
 .menubox table tr:hover .menu-item {
     text-decoration: underline;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 /*CSS for cart page*/
 .biggestbox{
     display: flex;
@@ -459,14 +457,13 @@ a:hover {
     display: flex;
     background-color:white
 }
-=======
+
 /*Final Page css begins here*/
-.box {
-=======
+
 
 /*CSS for cart page*/
 .biggestbox{
->>>>>>> e267f170e133ecd082ee6f997ce9e9ea098df7e9
+
     display: flex;
 }
 .reviewbox{
@@ -752,7 +749,4 @@ a:hover {
     }
 
 }
-<<<<<<< HEAD
->>>>>>> 69ea55ed914f7c32ef908d2b6a69eecce179125d
-=======
->>>>>>> e267f170e133ecd082ee6f997ce9e9ea098df7e9
+
