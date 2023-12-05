@@ -90,7 +90,7 @@ h3 {
     color: white;
     padding: 0px;
     font-size: 12px;
-    width: 100px;
+    width: 150px;
     height: 20px;
     border: 2px solid white;
     border-radius: 7px;
@@ -192,24 +192,25 @@ h3 {
     gap: 10px;
 }
 
-.button {
+.box {
     display: flex;
     width: 450px;
     height: 150px;
     background-color: white;
     border-radius: 7px;
-    box-shadow: 0 1px 1px;
+    box-shadow: 2px 2px 2px;
     align-items: center;
+    border-color: black;
 }
 
 .coffee {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
 
 .cftitle {
     width: 250px;
-    height: 50px;
+    height: 40px;
     display: flex;
     margin: 0;
     padding: 0px;
@@ -224,16 +225,18 @@ h3 {
     padding: 0px;
     font-size: large;
     flex-direction: column;
+    justify-content: space-around
 }
 
 .cfdetail {
     width: 50px;
-    height: 50px;
+    height: 40px;
     display: flex;
     margin: 0;
     padding: 0px;
     font-size: small;
     align-items: center;
+    justify-content: center;
 }
 
 .continuebutton {
@@ -252,5 +255,38 @@ h3 {
     justify-content: center;
     align-items: center;
     border-radius: 7px;
-
+    color: white;
 }
+.edit{
+    height: 30px;
+    width: 30px;
+    display:flex;
+}
+.editimage{
+    height:30px;
+    width:30px;
+    display: flex
+}
+.cappucino{
+    width: 75px;
+    height: 75px;
+}
+.lemonade{
+    width: 75px;
+    height: 75px;
+}
+.editbutton{
+    height: 30px;
+    width: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-color: white;
+    background-color: white;
+}
+.et{
+border-color: white;
+box-shadow: 0px;
+}
+
+

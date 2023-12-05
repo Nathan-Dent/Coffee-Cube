@@ -10,11 +10,7 @@ a {
 
 header {
     background-color: white;
-    padding: 10px;
-}
-
-.shopping-header-mobile {
-    display: none;
+    padding: 10px 0;
 }
 
 nav ul {
@@ -138,19 +134,11 @@ a:hover {
     font-size: 40px;
     color: white;
     box-shadow: 0px 6px 6px 0px #767676;
-    cursor: pointer;
 }
 
-.movement-button:hover {
+button:hover {
     background-color: #96663B;
     box-shadow: none;
-}
-
-.movement-container {
-    display: none;
-    justify-content: center;
-    align-content: center;
-    padding-bottom: 50px;
 }
 
 /* ----- MAIN-MENU-SPECIFIC STYLING BEGINS HERE ----- */
@@ -161,14 +149,6 @@ a:hover {
 }
 
 .logobox {
-    grid-column: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: contain;
-}
-
-.logobox a {
     grid-column: 1;
     display: flex;
     align-items: center;
@@ -287,89 +267,6 @@ a:hover {
     margin-right: 30px;
 }
 
-.popup {
-    position: absolute;
-    height: 600px;
-    width: 75vw;
-    z-index: 3;
-    left: 12.5%;
-    background-color: white;
-    border: 1px solid #767676;
-    border-radius: 16px;
-    box-shadow: 0px 0px 12px 1px;
-    display: none;
-    grid-template-rows: 1fr 3fr 1fr;
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-
-.item-name {
-    grid-row: 1;
-    text-align: center;
-    font-size: x-large;
-    font-weight: 800;
-}
-
-.size-options {
-    grid-row: 2;
-    margin-bottom: 5px;
-}
-
-.underline {
-    height: 10px;
-    width: 200px;
-    background-color: #96663B;
-    opacity: 39%;
-    border-radius: 25px;
-}
-
-.options-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.selection {
-    border: 1px solid black;
-    border-radius: 25px;
-    width: 250px;
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    cursor: pointer;
-}
-
-.selection p {
-    margin-left: 20px;
-}
-
-.drop-arrow {
-    grid-column: 2;
-}
-
-.add-to-cart {
-    grid-row: 3;
-    display: flex;
-    justify-content: center;
-}
-
-.add-to-cart .movement-button {
-    width: 300px;
-    height: 50px;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.exit {
-    position: absolute;
-    z-index: 4;
-    font-size: xx-large;
-    font-weight: bolder;
-    left: 95%;
-    top: 15px;
-    cursor: pointer;
-}
-
 /* CSS for Sub-Menus (Coffee, Iced, Etc.) begins here */
 
 .increment-tool {
@@ -436,7 +333,7 @@ a:hover {
 }
 
 .menubox table th {
-    font-size: x-large;
+    font-size: xx-large;
     text-align: left;
     border-bottom: 1px solid black;
 }
@@ -444,71 +341,15 @@ a:hover {
 .menubox table tr:hover .menu-item {
     text-decoration: underline;
 }
-<<<<<<< HEAD
-/*CSS for cart page*/
-.biggestbox{
-    display: flex;
-}
-.reviewbox{
-    display: flex;
-    background-color: #96663B;
-
-}
-.coffeebox{
-    display: flex;
-    background-color:white
-}
-=======
-/*Final Page css begins here*/
-.box {
-    display: flex;
-    margin: 20px;
-    flex-direction: row-reverse;
-}
-hr.half-line {
-    width: 100%;
-    border-top: 5px solid tan;
-    border-radius: 3px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-#map {
-    flex: 1;
-    height: 400px;
-}
-.storepickup-title {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-
-/*Final Page ends*/
 
 /* MOBILE ADJUSTMENTS */
 @media screen and (min-width: 1000px) {
     .hamburger {
         display: none;
     }
-    .shopping-header {
-        flex-direction: column; /* Change to a column layout */
-        text-align: center;
-    }
-
 }
 
 @media screen and (max-width: 1000px) {
-    body {
-        margin: 0px;
-    }
-    
-    header {
-        display: none;
-    }
-
     header nav {
         display: none;
     }
@@ -519,10 +360,6 @@ hr.half-line {
 
     #order-online {
         width: 70vw
-    }
-
-    #the-menu {
-        padding: 0px;
     }
 
     .hamburger {
@@ -537,7 +374,6 @@ hr.half-line {
         z-index: 9999;
         display: block;
       }
-
     
     .hamburger.is-active .hamburger-inner {
         bottom: 0;
@@ -631,97 +467,5 @@ hr.half-line {
         font-weight: bolder;
     }
 
-    .increment-tool {
-        display: none;
-    }
 
-    .shopping-header {
-        display: none;
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .shopping-interface {
-        display: block;
-    }
-
-    .shopping-header-mobile {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100px;
-        background-color: white;
-        color: black;
-        position: fixed;
-        height: 100px;
-        width: 100vw;
-        box-shadow: 0px 1px 4px 0px #00000091;
-
-    }
-
-    main {
-        padding-top: 120px;
-    }
-    
-    .movement-container {
-        display: flex;
-    }
-
-    .hamburger {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .logobox {
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    .logobox img {
-        width: 100%;
-        max-width: 100%;
-        max-height: 100px;
-        box-sizing: border-box;
-        overflow: hidden;
-    }
-
-
-    #mobile-nav-links {
-        display: none;
-        position: fixed;
-
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 100;
-
-        background-color: #C3A88F;
-        color: white;
-        font-size: xx-large;
-
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-
-
-    }
-
-    #mobile-nav-links.is-active-flex {
-        display: flex;
-    }
-
-    .mobile-menu-item,
-    #language-button {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: white;
-    }
-
-
-    table {
-        border-spacing: 20px;
-    }
 }
->>>>>>> 69ea55ed914f7c32ef908d2b6a69eecce179125d
