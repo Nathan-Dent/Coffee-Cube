@@ -10,7 +10,7 @@ a {
 
 header {
     background-color: white;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 .shopping-header-mobile {
@@ -141,9 +141,16 @@ a:hover {
     cursor: pointer;
 }
 
-button:hover {
+.movement-button:hover {
     background-color: #96663B;
     box-shadow: none;
+}
+
+.movement-container {
+    display: none;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 50px;
 }
 
 /* ----- MAIN-MENU-SPECIFIC STYLING BEGINS HERE ----- */
@@ -438,6 +445,21 @@ button:hover {
     text-decoration: underline;
 }
 
+/*CSS for cart page*/
+.biggestbox{
+    display: flex;
+}
+.reviewbox{
+    display: flex;
+    background-color: #96663B;
+
+}
+.coffeebox{
+    display: flex;
+    background-color:white
+}
+
+
 /* MOBILE ADJUSTMENTS */
 @media screen and (min-width: 1000px) {
     .hamburger {
@@ -452,6 +474,14 @@ button:hover {
 }
 
 @media screen and (max-width: 1000px) {
+    body {
+        margin: 0px;
+    }
+    
+    header {
+        display: none;
+    }
+
     header nav {
         display: none;
     }
@@ -462,6 +492,10 @@ button:hover {
 
     #order-online {
         width: 70vw
+    }
+
+    #the-menu {
+        padding: 0px;
     }
 
     .hamburger {
@@ -476,6 +510,7 @@ button:hover {
         z-index: 9999;
         display: block;
       }
+
     
     .hamburger.is-active .hamburger-inner {
         bottom: 0;
@@ -586,10 +621,77 @@ button:hover {
     }
 
     .shopping-header-mobile {
-        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px;
         background-color: white;
         color: black;
+        position: fixed;
+        height: 100px;
+        width: 100vw;
+        box-shadow: 0px 1px 4px 0px #00000091;
+
     }
+
+    main {
+        padding-top: 120px;
+    }
+    
+    .movement-container {
+        display: flex;
+    }
+
+    .hamburger {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .logobox {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .logobox img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+
+    #mobile-nav-links {
+        display: none;
+        position: fixed;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+
+        background-color: #C3A88F;
+        color: white;
+        font-size: xx-large;
+
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+
+    }
+
+    #mobile-nav-links.is-active-flex {
+        display: flex;
+    }
+
+    .mobile-menu-item,
+    #language-button {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+    }
+
 
     table {
         border-spacing: 20px;

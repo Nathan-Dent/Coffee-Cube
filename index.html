@@ -51,11 +51,30 @@
             <li><a href = "#">Cart</a></li>
         </ul>
     </nav>
-    <button class="hamburger" type="button" id="hamburger">
+</header>
+<header class="shopping-header-mobile">
+    <div class="logobox">
+        <a href="index.html">
+            <img src="./assets/coffeecube_logo symbols.png">
+        </a>
+    </div>
+    <button class="hamburger" id="hamburger">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
     </button>
+    <div id="mobile-nav-links">
+        <a href="./index.html" class="mobile-menu-item">Home</a>
+        <a href="#" class="mobile-menu-item">Cart</a> <!-- MODIFY WHEN CART EXISTS! -->
+        <a href="#" class="mobile-menu-item">Hours</a> <!--- MODIFY WHEN MOBILE HOURS PAGE EXISTS! -->
+        <li class="dropdown mobile-menu-item">
+            <a href = "#" id="language-button">Language | Jazyk</a>
+            <ul  class = "dropdown-menu">
+                <li><a href="#">English</a></li>
+                <li><a href="#">Čeština</a></li>
+            </ul>
+        </li>
+    </div>
 </header>
 <body>
     <main>
@@ -78,9 +97,9 @@
             </div>
         </div>
     </main>
+    <footer>
+        <p><a href="./terms-and-conditions.html">Terms & Conditions</a> | <a href="./gdpr.html">GDPR</a></p>
+    </footer>
 </body>
-<footer>
-        <p><a href="google.com">Terms & Conditions</a> | <a href="google.com">GDPR</a></p>
-</footer>
 </html>
-<script src="menutoggle.js"></script>
+<script src="mobilemenutoggle.js"></script>

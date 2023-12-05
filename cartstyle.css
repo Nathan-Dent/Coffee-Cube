@@ -1,0 +1,256 @@
+* {
+    font-family: "KoHo";
+}
+
+body {
+    display: flex;
+    padding: 0px;
+    margin: 0px
+}
+
+.menubox {
+    font-size: 7px;
+    display: flex;
+    display: flex;
+    background-color: #C3A88F;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 15px;
+    height: 700px;
+    width: 600px;
+}
+
+.order {
+    display: flex;
+    height: 730px;
+    width: 400px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the dropdown container */
+.dropdown-1 {
+    position: relative;
+    display: flex;
+}
+
+.dropdown-2 {
+    display: flex;
+}
+
+.dropdown-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    padding: 0px;
+    margin: 0px;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: medium;
+    color: white;
+}
+
+/* Style the button that triggers the dropdown */
+.dropbtn {
+    background-color: #C3A88F;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    width: 350px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.dropbtn-la {
+    background-color: #C3A88F;
+    color: white;
+    padding: 0px;
+    font-size: 12px;
+    width: 100px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.language-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.language-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.languange-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content on hover */
+.dropdown-1:hover .language-content {
+    display: block;
+
+}
+
+/* Style the dropdown content (hidden by default) */
+.store-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.store-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.store-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content on hover */
+.dropdown-2:hover .store-content {
+    display: block;
+}
+
+/* Style the dropdown content (hidden by default) */
+.time-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.time-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.time-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown content on hover */
+.dropdown-3:hover .time-content {
+    display: block;
+
+}
+
+.coffeebox {
+    display: flex;
+    background-color: white;
+    height: 730px;
+    width: 700px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    width: 450px;
+    height: 150px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 1px 1px;
+    align-items: center;
+}
+
+.coffee {
+    width: 100px;
+    height: 100px;
+}
+
+.cftitle {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    align-items: center;
+}
+
+.cftext {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    font-size: large;
+    flex-direction: column;
+}
+
+.cfdetail {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: 0;
+    padding: 0px;
+    font-size: small;
+    align-items: center;
+}
+
+.continuebutton {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+.continue {
+    display: flex;
+    height: 80px;
+    width: 150px;
+    margin: 20px;
+    background-color: #C3A88F;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+
+}
