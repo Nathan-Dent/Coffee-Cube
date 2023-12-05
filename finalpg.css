@@ -25,9 +25,8 @@ hr {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5px;
-
-
 }
+
 .shopping-header {
     margin-bottom: -50px;
 }
@@ -37,6 +36,7 @@ hr {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   text-align: center;
 
 }
 
@@ -45,7 +45,9 @@ hr {
         flex-wrap: wrap;
     }
    
-
+    .title-container {
+        align-items: center;
+    }
 }
 
 
