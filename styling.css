@@ -696,4 +696,39 @@ a:hover {
     table {
         border-spacing: 20px;
     }
+
+    .movement-button {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 310px;
+    }
+
+    /* POPUP STYLE MOBILE */
+
+    .popup {
+        height: 800px;
+        left: 6.25%;
+        grid-template-rows: 0.5fr 3fr 1fr;
+    }
+
+    .exit {
+        left: 90%;
+    }
+
+    .options-container {
+        flex-direction: column;
+    }
+
+    .add-to-cart .movement-button {
+        margin: 0px;
+        margin-top: 30px;
+    }
+
+    .shot-quantity .increment-tool {
+        display: grid;
+        width: 100px;
+        height: 30px;
+        font-size: x-large;
+    }
+
 }
