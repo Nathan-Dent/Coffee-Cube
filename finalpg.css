@@ -1,6 +1,7 @@
 * {
     font-family: "KoHo";
 }
+
 .box {
     display: flex;
     margin: 20px;
@@ -11,18 +12,24 @@ hr {
     width: 100%;
     border-top: 5px solid tan;
     border-radius: 3px;
-    margin-bottom: 40px;
+   
 }
 #map {
     flex: 1;
     height: 400px;
+    margin-top: 15px;
 }
 .title-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 5px;
 
+
+}
+.shopping-header {
+    margin-bottom: -50px;
 }
 
 .storepickup-title {
@@ -33,6 +40,13 @@ hr {
 
 }
 
+@media screen and (min-width: 500px) {
+    .box {
+        flex-wrap: wrap;
+    }
+   
+
+}
 
 
 /* nathans styling code*/ 
@@ -82,10 +96,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
     bottom: 0;
     width: 100%;
-    
+  
  }
 
 
