@@ -16,15 +16,32 @@
 </head>
 
 <body>
-
-    <div class="menubox">
-        <div class="dropdown-1">
-            <button class="dropbtn-la"> <span class="arrow-down">Language/Jazyk &#9660</span></button>
-            <div class="language-content">
-                <a href="EN">English</a>
-                <a href="CZ">Češka</a>
-            </div>
+    <header class="shopping-header">
+        <div class="logobox">
+            <a href="index.html">
+                <img src="./assets/coffeecube_logo symbols.png">
+            </a>
         </div>
+        
+        <nav class="language-button">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Language | Jazyk</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Čeština</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="cart-button">
+            <a href="./cart.html">Cart</a>
+        </div>
+
+    </header>
+
+<div class="cartpg">
+    <div class="menubox">
         <div class="order">
             <h2>Review Order</h2>
             <h3>Pickup Store</h3>
@@ -51,6 +68,19 @@
                 <h3 class="Total">Total...</h3>
             </div>
 
+        </div>
+ 
+        <div class="backbutton">
+            <a href="./FinalPage2.html">
+                <button class="back"> Back
+                </button>
+            </a>
+        </div>
+        <div class="continuebutton">
+            <a href="./FinalPage2.html">
+                <button class="continue"> Continue
+                </button>
+            </a>
         </div>
     </div>
     <div class="coffeebox">
@@ -129,11 +159,6 @@
             </div>
         </div>
     </div>
-    <div class="continuebutton">
-        <a href="./FinalPage2.html">
-            <button class="continue"> Continue
-            </button>
-        </a>
-    </div>
+</div>
 </body>
 </html>
