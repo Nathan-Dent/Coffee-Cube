@@ -139,6 +139,8 @@ a:hover {
     color: white;
     box-shadow: 0px 6px 6px 0px #767676;
     cursor: pointer;
+
+    align-items: center;
 }
 
 .movement-button:hover {
@@ -370,6 +372,11 @@ a:hover {
     cursor: pointer;
 }
 
+.quantities-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* CSS for Sub-Menus (Coffee, Iced, Etc.) begins here */
 
 .increment-tool {
@@ -443,6 +450,24 @@ a:hover {
 
 .menubox table tr:hover .menu-item {
     text-decoration: underline;
+}
+
+.quick-add {
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.quick-add:hover {
+    background-color: #7676765f;
 }
 /*CSS for cart page*/
 .biggestbox{
