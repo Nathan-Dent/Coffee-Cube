@@ -139,6 +139,8 @@ a:hover {
     color: white;
     box-shadow: 0px 6px 6px 0px #767676;
     cursor: pointer;
+
+    align-items: center;
 }
 
 .movement-button:hover {
