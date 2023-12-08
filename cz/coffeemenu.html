@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styling.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KoHo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <title>Coffee - Coffee Cube</title>
+</head>
+
+<body>
+    <header class="shopping-header">
+        <div class="logobox">
+            <a href="index.html">
+                <img src="../assets/coffeecube_logo symbols.png">
+            </a>
+        </div>
+        <div class="title-container">
+            <h1>Lístek</h1>
+        </div>
+        <nav class="language-button">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Language | Jazyk</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../coffeemenu.html">English</a></li>
+                        <li><a href="#">Čeština</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        </div>
+        <div id="cart-button">
+            <a href="../cart.html">Košík</a>
+        </div>
+    </header>
+    <header class="shopping-header-mobile">
+        <div class="logobox">
+            <a href="./index.html">
+                <img src="../assets/coffeecube_logo symbols.png">
+            </a>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div id="mobile-nav-links">
+            <a href="./index.html" class="mobile-menu-item">Domov</a>
+            <a href="./cart.html" class="mobile-menu-item">Košík</a>
+            <a href="./mobile-hours.html" class="mobile-menu-item">Úřední Hodiny</a>
+            <li class="dropdown mobile-menu-item">
+                <a href="#" id="language-button">Language | Jazyk</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../coffeemenu.html">English</a></li>
+                    <li><a href="#">Čeština</a></li>
+                </ul>
+            </li>
+        </div>
+    </header>
+    <main>
+        <!--ESPRESSO POPUP-->
+        <div class="popup" id="espresso-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Espresso</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--DOUBLE ESPRESSO POPUP-->
+        <div class="popup" id="double-espresso-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Double Espresso</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline">Doplňky</div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--AMERICANO POPUP-->
+        <div class="popup" id="americano-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Americano</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--BATCH BREW POPUP-->
+        <div class="popup" id="batch-brew-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Batch Brew</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                        <p>Large</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--V60 POPUP-->
+        <div class="popup" id="v60-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>V60</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--MACCHIATO POPUP-->
+        <div class="popup" id="macchiato-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Macchiato</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--CAPPUCCINO POPUP-->
+        <div class="popup" id="cappuccino-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Cappuccino</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--LATTE POPUP-->
+        <div class="popup" id="latte-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Latte</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                        <p>Large</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--FLAT WHITE POPUP-->
+        <div class="popup" id="flat-white-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Flat White</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--MOCHA POPUP-->
+        <div class="popup" id="mocha-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Mocha</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                        <p>Large</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--DIRTY CHAI POPUP-->
+        <div class="popup" id="dirty-chai-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Dirty Chai</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                        <p>Large</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <!--IRISH COFFEE POPUP-->
+        <div class="popup" id="irish-coffee-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Irish Coffee</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs Espressa</p>
+                        <div class="selection">
+                            <p>Signature Espresso Pečené</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Výstřely</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+
+        <div class="shopping-interface">
+            <div class="sidebar">
+                <div class="sidebar-main">
+                    <div class="drink-title">
+                        <h1>Napoje</h1>
+                    </div>
+                    <div class="drink-sections">
+                        <ul>
+                            <li><a href="./coffeemenu.html">Káva</a></li>
+                            <li><a href="./hotdrinksmenu.html">Horké Nápoje</a></li>
+                            <li><a href="./icedmenu.html">Ledový</a></li>
+                            <li><a href="./softsmenu.html">Ostatní Nápoje</a></li>
+                            <li><a href="#">Alkohol</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menubox">
+                <table>
+                    <tr>
+                        <th>Káva</th>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="espresso">Espresso</a></td>
+                        <td>55</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="espresso-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="espresso-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="espresso-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="double-espresso">Double Espresso</a></td>
+                        <td>70</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="double-espresso-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="double-espresso-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="double-espresso-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="americano">Americano</a></td>
+                        <td>70</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="americano-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="americano-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="americano-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="batch-brew">Batch Brew</a></td>
+                        <td>60/75</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="batch-brew-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="batch-brew-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="batch-brew-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="v60">V60</a></td>
+                        <td>100</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="v60-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="v60-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="v60-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="macchiato">Macchiato</a></td>
+                        <td>60</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="macchiato-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="macchiato-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="macchiato-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="cappuccino">Cappuccino</a></td>
+                        <td>70</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="cappuccino-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="cappuccino-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="cappuccino-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="latte">Latte</a></td>
+                        <td>75/90</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="latte-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="latte-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="latte-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="flat-white">Flat White</a></td>
+                        <td>80</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="flat-white-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="flat-white-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="flat-white-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="mocha">Mocha</a></td>
+                        <td>80/95</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="mocha-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="mocha-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="mocha-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="dirty-chai">Dirty Chai</a></td>
+                        <td>85/100</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="dirty-chai-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="dirty-chai-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="dirty-chai-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-item"><a href="#" id="irish-coffee">Irish Coffee</a></td>
+                        <td>120</td>
+                        <td>
+                            <div class="increment-tool">
+                                <div class="minus">
+                                    <p><a href="#" id="irish-coffee-minus">-</a></p>
+                                </div>
+                                <div class="quant">
+                                    <p id="irish-coffee-quant">0</p>
+                                </div>
+                                <div class="plus">
+                                    <p><a href="#" id="irish-coffee-plus">+</a></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="movement-container">
+            <a href="./mainmenu.html">
+                <button class="movement-button">Back to Menu</button>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <li class="dropdown-hours">
+            <a href="#">Úřední Hodiny</a>
+            <ul class="dropdown-menu-hours" style="top: 150px;">
+                <li>
+                    <strong>Coffee Cube Bar</strong>
+                    <p>Úterý - Pátek</p>
+                    <p>14:00 - 21:00</p>
+                    <p>Sobota</p>
+                    <p>12:00 - 21:00</p>
+                </li>
+                <li>
+                    <strong>Coffee Cube Original</strong>
+                    <p>Pondělí - Pátek</p>
+                    <p>8:00 - 19:00</p>
+                    <p>Sobota</p>
+                    <p>10:00 - 19:00</p>
+                    <p>Neděle</p>
+                    <p>10:00 - 18:00</p>
+                </li>
+                <li>
+                    <strong>Coffee Cube Black</strong>
+                    <p>Úterý - Pátek</p>
+                    <p>8:00 - 18:00</p>
+                    <p>Sobota - Neděle</p>
+                    <p>10:00 - 18:00</p>
+                </li>
+            </ul>
+        </li>
+        <p><a href="./terms-and-conditions.html">Všeobecné Obchodní Podmínky</a> | <a href="./gdpr.html">GDPR</a></p>
+        <div class="instagram-container">
+            <a href="https://www.instagram.com/coffeecubeofficial/">
+                <img src="https://cdn-icons-png.flaticon.com/512/717/717392.png" id="instagram-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="../incrementer.js"></script>
+<script src="../popupconfig.js"></script>
+<script src="../mobilemenutoggle.js"></script>
+<script src="../espressoshotsincrementer.js"></script>
