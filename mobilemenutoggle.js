@@ -14,18 +14,3 @@ hamburger.addEventListener('click', function (event) {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    if (localStorage.getItem('cookiesAccepted') !== 'true') {
-        showCookiePop();
-    }
-    document.getElementById('accept-btn').addEventListener('click', function(){
-        localStorage.setItem('cookiesAccepted', true);
-        hideCookiePopup();
-    });
-
-    document.getElementById('cancel-btn').addEventListener('click', function () {
-        hideCookiePopup();
-
-    });
-});
-

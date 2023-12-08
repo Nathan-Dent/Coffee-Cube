@@ -762,31 +762,42 @@ a:hover {
 
 /* ellison's cookies styling code*/
 
-.cookie-popup{
+#cookie-popup{
+    text-align: center;
+}
+.cookie-popup {
     display: none;
-    position: fixed;
+    position:absolute;
     bottom: 20px;
     right: 20px;
-    background-color: #C3A88F;
-    border: 1px solid white;
+    background-color:#C3A88F;
+    color: white;
+    border: 1px solid #C3A88F;
     padding: 10px;
     max-width: 300px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 10px black;
 }
 
-.cookie-popup p{
+.cookie-popup p {
     margin: 0;
 }
 
-.cookie-popup a{
 
-color: blue;
-text-decoration: underline;}
+.cookie-popup a {
+    color: blue;
+    text-decoration: underline;
+}
 
-.cookie-popup button{
+.cookie-popup button {
     margin-top: 5px;
     padding: 5px 10px;
     cursor: pointer;
+    border-radius: 9px;
+    background-color: white;
+    border: white;
 }
-.cookie-popup button:hover{
-    background-color: #C3A88F;
+
+.cookie-popup button:hover {
+    background-color: #ddd;
 }
