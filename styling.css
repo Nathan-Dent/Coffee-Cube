@@ -88,13 +88,13 @@ nav ul {
 }
 
 footer {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   position: fixed;
-   bottom: 0;
-   width: 100%;
-   background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
 }
 
 a:hover {
@@ -132,7 +132,7 @@ a:hover {
     width: 410px;
     height: 94px;
     border: none;
-    
+
     font-family: "Inter", sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -185,12 +185,12 @@ a:hover {
 .title-container {
     font-size: xx-large;
     padding-left: 68px;
-    
+
 }
 
 .shopping-header h1 {
     grid-column: 2;
-    }
+}
 
 .language-button {
     display: flex;
@@ -429,7 +429,8 @@ a:hover {
     padding-right: 5px;
 }
 
-.plus:hover, .minus:hover {
+.plus:hover,
+.minus:hover {
     background-color: #7676765f;
 }
 
@@ -446,36 +447,41 @@ a:hover {
 .menubox table tr:hover .menu-item {
     text-decoration: underline;
 }
+
 /*CSS for cart page*/
-.biggestbox{
+.biggestbox {
     display: flex;
 }
-.reviewbox{
+
+.reviewbox {
     display: flex;
     background-color: #96663B;
 
 }
-.coffeebox{
+
+.coffeebox {
     display: flex;
-    background-color:white
+    background-color: white
 }
 
 /*Final Page css begins here*/
 
 
 /*CSS for cart page*/
-.biggestbox{
+.biggestbox {
 
     display: flex;
 }
-.reviewbox{
+
+.reviewbox {
     display: flex;
     background-color: #96663B;
 
 }
-.coffeebox{
+
+.coffeebox {
     display: flex;
-    background-color:white
+    background-color: white
 }
 
 
@@ -484,11 +490,13 @@ a:hover {
     .hamburger {
         display: none;
     }
+
     .shopping-header {
-        flex-direction: column; /* Change to a column layout */
+        flex-direction: column;
+        /* Change to a column layout */
         text-align: center;
     }
-    
+
 
 }
 
@@ -496,7 +504,7 @@ a:hover {
     body {
         margin: 0px;
     }
-    
+
     header {
         display: none;
     }
@@ -528,26 +536,26 @@ a:hover {
         outline: none;
         z-index: 9999;
         display: block;
-      }
+    }
 
-    
+
     .hamburger.is-active .hamburger-inner {
         bottom: 0;
         transform: translate(0, -10px) rotate(-45deg);
-      }
-    
+    }
+
     .hamburger.is-active .hamburger-inner::before {
         top: 0;
         transform: rotate(-90deg);
-      }
-    
+    }
+
     .hamburger-box {
         width: 30px;
         height: 24px;
         display: inline-block;
         position: relative;
-      }
-    
+    }
+
     .hamburger-box::before {
         display: block;
         content: '';
@@ -558,14 +566,14 @@ a:hover {
         left: 50%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
-      }
-    
+    }
+
     .hamburger-inner {
         display: block;
         top: auto;
         bottom: 5px;
-      }
-    
+    }
+
     .hamburger-inner,
     .hamburger-inner::before {
         width: 30px;
@@ -574,14 +582,14 @@ a:hover {
         border-radius: 0;
         position: absolute;
         transition: all 0.3s ease-in-out;
-      }
-    
+    }
+
     .hamburger-inner::before {
         content: "";
         display: block;
         top: -10px;
-      }
-    
+    }
+
     #the-menu {
         position: fixed;
         top: 0;
@@ -655,7 +663,7 @@ a:hover {
     main {
         padding-top: 120px;
     }
-    
+
     .movement-container {
         display: flex;
     }
@@ -752,3 +760,33 @@ a:hover {
 
 }
 
+/* ellison's cookies styling code*/
+
+.cookie-popup{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #C3A88F;
+    border: 1px solid white;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.cookie-popup p{
+    margin: 0;
+}
+
+.cookie-popup a{
+
+color: blue;
+text-decoration: underline;}
+
+.cookie-popup button{
+    margin-top: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.cookie-popup button:hover{
+    background-color: #C3A88F;
+}

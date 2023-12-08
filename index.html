@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styling.css" rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=KoHo">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Inter">
-    <title>Home - Coffee Cube</title> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KoHo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <script defer="cookiescript.js"></script>
+    <title>Home - Coffee Cube</title>
 </head>
 <header>
     <nav id="the-menu">
         <ul>
             <li class="dropdown-hours">
-                <a href = "#">Hours</a>
+                <a href="#">Hours</a>
                 <ul class="dropdown-menu-hours">
                     <li>
                         <strong>Coffee Cube Bar</strong>
@@ -42,13 +42,13 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a href = "#">Language | Jazyk</a>
-                <ul  class = "dropdown-menu">
+                <a href="#">Language | Jazyk</a>
+                <ul class="dropdown-menu">
                     <li><a href="#">English</a></li>
                     <li><a href="cz/index.html">Čeština</a></li>
                 </ul>
             </li>
-            <li><a href = "./cart.html">Cart</a></li>
+            <li><a href="./cart.html">Cart</a></li>
         </ul>
     </nav>
 </header>
@@ -68,14 +68,15 @@
         <a href="./cart.html" class="mobile-menu-item">Cart</a>
         <a href="./mobile-hours.html" class="mobile-menu-item">Hours</a>
         <li class="dropdown mobile-menu-item">
-            <a href = "#" id="language-button">Language | Jazyk</a>
-            <ul  class = "dropdown-menu">
+            <a href="#" id="language-button">Language | Jazyk</a>
+            <ul class="dropdown-menu">
                 <li><a href="#">English</a></li>
                 <li><a href="cz/index.html">Čeština</a></li>
             </ul>
         </li>
     </div>
 </header>
+
 <body>
     <main>
         <div class="container">
@@ -100,6 +101,19 @@
     <footer>
         <p><a href="./terms-and-conditions.html">Terms & Conditions</a> | <a href="./gdpr.html">GDPR</a></p>
     </footer>
+
+    <div id="cookie-popup" class="cookie-popup">
+        <p>This website uses cookues to personalize your browsing experience. By clicking accept, you consent to the use
+            of cookies. <a href="#">Learn more</a></p>
+        <button id="accept-btn">Accept</button>
+        <button id="cancel-btn">Cancel</button>
+    </div>
+
+
+    </div>
+
+
 </body>
+
 </html>
 <script src="mobilemenutoggle.js"></script>
