@@ -2,6 +2,10 @@
     font-family: "KoHo";
 }
 
+main {
+    padding-bottom: 30px;
+}
+
 .box {
     display: flex;
     margin: 20px;
