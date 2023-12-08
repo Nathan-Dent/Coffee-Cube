@@ -1,18 +1,18 @@
 * {
     font-family: "KoHo";
 }
-body{
+
+body {
     padding: 0px;
     margin: 0px;
     overflow-x: hidden;
 }
+
 .cartpg {
-    display: flex;
+    display: flex
 }
 
 .menubox {
-    font-size: 7px;
-    display: flex;
     display: flex;
     background-color: #C3A88F;
     flex-wrap: nowrap;
@@ -28,8 +28,10 @@ body{
     width: 400px;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    align-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 
@@ -45,6 +47,7 @@ li {
 
 .dropdown-2 {
     display: flex;
+    flex-direction: column;
 }
 
 .dropdown-3 {
@@ -55,13 +58,13 @@ li {
 h2 {
     padding: 0px;
     margin: 0px;
-    font-size: large;
+    font-size: 30px;
     color: white;
     font-weight: bold;
 }
 
 h3 {
-    font-size: medium;
+    font-size: 20px;
     color: white;
 }
 
@@ -70,8 +73,7 @@ h3 {
     background-color: #C3A88F;
     color: white;
     padding: 10px;
-    font-size: 16px;
-    width: 350px;
+    width: 250px;
     height: 30px;
     border: 2px solid white;
     border-radius: 7px;
@@ -81,29 +83,35 @@ h3 {
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-content: center;
+
 }
 
 
 /* Style the dropdown content (hidden by default) */
 .store-content {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    background-color: #c3a88f;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 9px;
 }
 
 /* Style the dropdown links */
 .store-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     display: block;
     text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+
 }
 
 /* Change color on hover */
 .store-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #b8997b;
 }
 
 /* Show the dropdown content on hover */
@@ -114,23 +122,32 @@ h3 {
 /* Style the dropdown content (hidden by default) */
 .time-content {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
+    position: relative;
+    background-color: #c3a88f;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-radius: 9px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 100px;
 }
 
 /* Style the dropdown links */
 .time-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     display: block;
     text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    text-align: center;
+
+
 }
 
 /* Change color on hover */
 .time-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #b8997b;
 }
 
 /* Show the dropdown content on hover */
@@ -149,8 +166,10 @@ h3 {
     flex-wrap: nowrap;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-top: 85px;
+    margin-top: 65px;
     margin-left: 20px;
+    margin-bottom: 40px;
+    align-items: center;
 }
 
 .box {
@@ -200,6 +219,7 @@ h3 {
     margin-left: 30px;
     margin-right: 30px;
 }
+
 .cfdetail {
     width: fit-content;
     max-width: 107px;
@@ -214,8 +234,10 @@ h3 {
 
 .continuebutton {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 40px;
 }
 
 .continue {
@@ -223,20 +245,24 @@ h3 {
     height: 80px;
     width: 150px;
     margin: 20px;
-    background-color:white;
     font-size: larger;
     justify-content: center;
     align-items: center;
-    border-radius: 7px;
-    color:#C3A88F;
-    background-color: white
+    border-radius: 9px;
+    color: white;
+    background-color: #C3A88F;
+    text-decoration: none;
+
+
 }
-.edit{
+
+.edit {
     height: 30px;
     width: 30px;
-    display:flex;
+    display: flex;
 }
-.editbutton{
+
+.editbutton {
     width: 40px;
     height: 30px;
     display: flex;
@@ -246,31 +272,34 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-.editimage{
+
+.editimage {
     height: 30px;
     width: 40px;
     display: flex;
 }
-.et{
+
+.et {
     border-color: white;
     box-shadow: 0px;
-    }
-
-.cappucino{
-    width: 75px;
-    height: 75px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
-.lemonade{
+
+.cappucino {
     width: 75px;
     height: 75px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
+.lemonade {
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-/* nathans styling code*/ 
+
+/* nathans styling code*/
 nav ul {
     list-style: none;
     display: flex;
@@ -287,9 +316,10 @@ nav ul {
     box-shadow: 0px 1px 4px 0px #00000091;
     z-index: 2;
     width: 100vw;
-    height: 85px;
+    height: 65px;
     background-color: white;
 }
+
 .logobox img {
     height: 100%;
 }
@@ -384,10 +414,81 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
     bottom: 0;
-    width: 100%;  
- }
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 4px 0px #00000091;
+}
 
+
+a {
+    text-decoration-line: none;
+    color: black
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .shopping-header {
+        display: none;
+    }
+
+    .logo {
+        width: 90vw;
+    }
+
+    .cartpg {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .menubox {
+        height: auto;
+        width: auto;
+        display: flex;
+        background-color: #C3A88F;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .order {
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+
+    }
+
+    .store-content .time-content {
+        position: absolute;
+    }
+
+    h2 {
+        font-size: medium;
+    }
+
+    h3 {
+        font-size: small;
+
+    }
+
+    .coffeebox {
+        height: auto;
+        width: auto;
+        margin-top: none;
+        margin-top: none;
+    }
+.box{
+    width: auto;
+}
+}
 
 
 
