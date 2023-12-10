@@ -4,6 +4,7 @@
 
 body {
     overflow-x: hidden;
+    margin: 0px;
 }
 
 .cartpg {
@@ -19,6 +20,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    height: 100vh
 }
 
 .order {
@@ -27,6 +29,74 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.continue {
+    cursor: pointer;
+}
+
+.popup {
+    top: 25vh;
+}
+
+.increment-tool {
+    width: 70px;
+    height: 20px;
+    border-radius: 25px;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    font-size: medium;
+
+}
+
+.increment-tool div p {
+    margin: 0px;
+    text-align: center;
+}
+
+.increment-tool .minus {
+    grid-column: 1;
+}
+
+.increment-tool #quant {
+    grid-column: 2;
+    border-left: 1px solid #7676765f;
+    border-right: 1px solid #7676765f;
+}
+
+.plus {
+    grid-column: 3;
+}
+
+.plus a:hover {
+    text-decoration: none;
+}
+
+.minus a:hover {
+    text-decoration: none;
+}
+
+.minus {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.plus {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.quant {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.plus:hover,
+.minus:hover {
+    background-color: #7676765f;
 }
 
 /* STYLE FOR THE ORDER DETAILS */
@@ -136,16 +206,17 @@ h3 {
 .coffeebox {
     display: flex;
     background-color: white;
-    max-height: 645px;
+    /*max-height: 645px;*/
+    height: 90vh;
     width: 775px;
     flex-direction: column;
     justify-content: flex-start;
     flex-wrap: nowrap;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-top: 65px;
-    margin-left: 20px;
-    margin-bottom: 40px;
+    padding-top: 65px;
+    padding-left: 20px;
+    padding-bottom: 40px;
     align-items: center;
 }
 
@@ -399,11 +470,20 @@ a {
 
 }
 
+.popup h2 {
+    color: black;
+}
+
 .item-name {
     grid-row: 1;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     text-align: center;
     font-size: x-large;
     font-weight: 800;
+    top: 25px;
 }
 
 .size-options {
@@ -721,6 +801,7 @@ a {
         height: auto;
         width: auto;
         display: flex;
+        
         background-color: #C3A88F;
         flex-wrap: wrap;
         flex-direction: column;
@@ -728,6 +809,10 @@ a {
         align-items: center;
         margin-top: 0%;
         margin-bottom: 0%;
+        position: fixed;
+        top: 50vh;
+        height: 50vh;
+        width: 100vw;
     }
 
     .order {
@@ -754,7 +839,10 @@ a {
         margin-top: 0px;
         margin-left: 0px;
         margin-bottom: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
         width: auto;
+        padding-bottom: 50vh;
     }
 
     .box {
