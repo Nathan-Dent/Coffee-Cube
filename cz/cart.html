@@ -16,124 +16,364 @@
 </head>
 
 <body>
+    <header class="shopping-header">
+        <div class="logobox">
+            <a href="index.html">
+                <img src="./assets/coffeecube_logo symbols.png">
+            </a>
+        </div>
+        <nav class="language-button">
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Language | Jazyk</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Čeština</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="cart-button">
+            <a href="./cart.html">Cart</a>
+        </div>
+    </header>
+    <header class="shopping-header-mobile">
+        <div class="logobox">
+            <a href="index.html">
+                <img src="./assets/coffeecube_logo symbols.png">
+            </a>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div id="mobile-nav-links">
+            <a href="./index.html" class="mobile-menu-item">Home</a>
+            <a href="./cart.html" class="mobile-menu-item">Cart</a>
+            <a href="./mobile-hours.html" class="mobile-menu-item">Hours</a>
+            <li class="dropdown mobile-menu-item">
+                <a href="#" id="language-button">Language | Jazyk</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="cz/cart.html">Čeština</a></li>
+                </ul>
+            </li>
+        </div>
+    </header>
+    <main>
+         <!--AMERICANO POPUP-->
+        <div class="popup" id="americano-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Americano</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifikace </h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs</p>
+                        <div class="selection">
+                            <p>Podpis Espresso Pečeně</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Počet Espressa</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+        <!--CAPPUCCINO POPUP-->
+        <div class="popup" id="cappuccino-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Cappuccino</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifikace</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs</p>
+                        <div class="selection">
+                            <p>Podpis Espresso Pečeně</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Počet Espressa</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Přidat do Košíku</button>
+            </div>
+        </div>
+         <!--GINGER LEMONADE POPUP-->
+         <div class="popup" id="ginger-lemonade-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Zázvorová Limonáda</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Možnosti Velikosti</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Pravidelný</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifikace</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Doplňky</p>
+                        <div class="selection">
+                            <p>Voda</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Směs</p>
+                        <div class="selection">
+                            <p>Podpis Espresso Pečeně</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Počet Espressa</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button add-to-cart">Přidat do Košíku</button>
+            </div>
+        </div>
 
-    <div class="menubox">
-        <div class="dropdown-1">
-            <button class="dropbtn-la"> <span class="arrow-down">Language/Jazyk &#9660</span></button>
-            <div class="language-content">
-                <a href="../cart.html">English</a>
-                <a href="#">Češka</a>
-            </div>
-        </div>
-        <div class="order">
-            <h2>Review Order</h2>
-            <h3>Pickup Store</h3>
-            <div class="dropdown-2">
-                <button class="dropbtn"><span class="arrow-down">&#9660;</span></button>
-                <div class="store-content">
-                    <a href="OT">Old Town</a>
-                    <a href="NT">New Town</a>
+        
+        <div class="cartpg">
+            <div class="menubox">
+                <div class="order">
+                    <h2>Přezkoumat objednávku(5)</h2>
+                    <div class="drop-down">
+                        <h3>Vyzvedávání Místo</h3>
+                        <button class="dropbtn"><span class="arrow-down">&#9660;</span></button>
+                        <div class="store-content">
+                            <a href="OT">Old Town</a>
+                            <a href="NT">New Town</a>
+                        </div>
+                    </div>
+                    <div class="drop-down">
+                        <h3>Vyzvedávání Hodiny</h3>
+                        <button class="dropbtn"><span class="arrow-down">&#9660;</span></button>
+                        <div class="time-content">
+                            <a href="10">10</a>
+                            <a href="11">11</a>
+                            <a href="12">12</a>
+                            <a href="13">13</a>
+                            <a href="14">14</a>
+                            <a href="15">15</a>
+                            <a href="16">16</a>
+                            <a href="17">17</a>
+                        </div>
+                    </div>
+                    <h3 class="Total">Celková Částka(5)...
+                        350(CZK)</h3>
+                    <div class="continuebutton">
+                        <a href="./FinalPage2.html">
+                            <button class="continue"> Pokračovat
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <h3>Pickup Time</h3>
-            <div class="dropdown-3">
-                <button class="dropbtn"><span class="arrow-down">&#9660;</span></button>
-                <div class="time-content">
-                    <a href="10">10</a>
-                    <a href="11">11</a>
-                    <a href="12">12</a>
-                    <a href="13">13</a>
-                    <a href="14">14</a>
-                    <a href="15">15</a>
-                    <a href="16">16</a>
-                    <a href="17">17</a>
-                </div>
-                <h3 class="Total">Total...</h3>
-            </div>
+            <div class="coffeebox">
+                <div class="box">
+                    <div class="coffee">
+                        <img class="coffee" src="./assets/coffee.png" alt="Coffee Image">
+                    </div>
+                    <div class="cftext">
+                        <div class="cftitle">
+                            <p>Americano</p>
+                        </div>
+                        <div class="cfdetail">
+                            <p>Pravidelný,
+                                Káva Bez Kofeinu</p>
+                        </div>
+                        <div class="cfprice">
+                            <p>70</p>
+                        </div>
 
-        </div>
-    </div>
-    <div class="coffeebox">
+                            <div class="edit">
+                                <button class="editbutton">
+                                    <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="coffee">
+                        <img class="coffee" src="./assets/coffee.png" alt="Coffee Image">
+                    </div>
+                    <div class="cftext">
+                        <div class="cftitle">
+                            <p>Americano</p>
+                        </div>
+                        <div class="cfdetail">
+                            <p>Pravidelný</p>
+                        </div>
+                        <div class="cfprice">
+                            <p>70</p>
+                        </div>
 
-        <div class="box">
-            <div class="coffee">
-                <img class="coffee" src="coffee.png" alt="Coffee Image">
-            </div>
-            <div class="cftext">
-                <div class="cftitle">
-                    Americano
+                            <div class="edit">
+                                <button class="editbutton">
+                                    <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
+                                </button>
+                            </div>
+                    
+                    </div>
                 </div>
-                <div class="cfdetail">
-                    Small
-                    Decaf
+                <div class="box">
+                    <div class="coffee">
+                        <img class="cappucino" src="./assets/cappucino.png" alt="Coffee Image">
+                    </div>
+                    <div class="cftext">
+                        <div class="cftitle">
+                            <p>Cappucino</p>
+                        </div>
+                        <div class="cfdetail">
+                            <p>Pravidelný</p>
+                        </div>
+                        <div class="cfprice">
+                            <p>70</p>
+                        </div>
+                            <div class="edit">
+                                <button class="editbutton">
+                                    <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
+                                </button>
+                            </div>
+                    </div>
                 </div>
-                <div class="edit">
-                    <button class="editbutton">
-                        <a href="et"><img class="editimage" src="edit.png" alt="Edit Image"></a>
-                    </button>
+                <div class="box">
+                    <div class="coffee">
+                        <img class="lemonade" src="./assets/lemonade.png" alt="Coffee Image">
+                    </div>
+                    <div class="cftext">
+                        <div class="cftitle">
+                            <p>Zázvorová Limonáda</p>
+                        </div>
+                        <div class="cfdetail">
+                            <p>Pravidelný</p>
+                        </div>
+                        <div class="cfprice">
+                            <p>70</p>
+                        </div>
+                            <div class="edit">
+                                <button class="editbutton">
+                                    <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="coffee">
+                        <img class="lemonade" src="./assets/lemonade.png" alt="Coffee Image">
+                    </div>
+                    <div class="cftext">
+                        <div class="cftitle">
+                            <p> Zázvorová Limonáda</p>
+                        </div>
+                        <div class="cfdetail">
+                            <p>Pravidelný, Bez Ledu</p>
+                        </div>
+                        <div class="cfprice">
+                            <p>70</p>
+                        </div>
+                        <a href="./softsmenu.html">
+                            <div class="edit">
+                                <button class="editbutton">
+                                    <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
+                                </button>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="box">
-            <div class="coffee">
-                <img class="coffee" src="coffee.png" alt="Coffee Image">
-            </div>
-            <div class="cftext">
-                <div class="cftitle">
-                    Americano
-                </div>
-                <div class="cfdetail">
-                    Large
-                </div>
-                <div class="edit">
-                    <button class="editbutton">
-                        <a href="et"><img class="editimage" src="edit.png" alt="Edit Image"></a>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="coffee">
-                <img class="cappucino" src="cappucino.png" alt="Coffee Image">
-            </div>
-            <div class="cftext">
-                <div class="cftitle">
-                    Cappucino
-                </div>
-                <div class="cfdetail">
-                    Medium
-                </div>
-                <div class="edit">
-                    <button class="editbutton">
-                        <a href="et"><img class="editimage" src="edit.png" alt="Edit Image"></a>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="coffee">
-                <img class="lemonade" src="lemonade.png" alt="Coffee Image">
-            </div>
-            <div class="cftext">
-                <div class="cftitle">
-                    Lemonade
-                </div>
-                <div class="cfdetail">
-                    Small
-                </div>
-                <div class="edit">
-                    <button class="editbutton">
-                        <a href="et"><img class="editimage" src="edit.png" alt="Edit Image"></a>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="continuebutton">
-        <a href="./FinalPage2.html">
-            <button class="continue"> Continue
-            </button>
-        </a>
-    </div>
+    </main>
+    <footer>
+        <footer>
+            <p><a href="./terms-and-conditions.html">Smluvní & Podmínky</a> | <a href="./gdpr.html">GDPR</a></p>
+        </footer>
+    </footer>
 </body>
+
 </html>
+<script src="mobilemenutoggle.js"></script>

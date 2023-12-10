@@ -6,12 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart -- Coffee Cube</title>
-
     </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=KoHo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="./cartstyle.css">
-
     </link>
 </head>
 
@@ -22,7 +20,6 @@
                 <img src="./assets/coffeecube_logo symbols.png">
             </a>
         </div>
-
         <nav class="language-button">
             <ul>
                 <li class="dropdown">
@@ -37,9 +34,187 @@
         <div id="cart-button">
             <a href="./cart.html">Cart</a>
         </div>
-
+    </header>
+    <header class="shopping-header-mobile">
+        <div class="logobox">
+            <a href="index.html">
+                <img src="./assets/coffeecube_logo symbols.png">
+            </a>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div id="mobile-nav-links">
+            <a href="./index.html" class="mobile-menu-item">Home</a>
+            <a href="./cart.html" class="mobile-menu-item">Cart</a>
+            <a href="./mobile-hours.html" class="mobile-menu-item">Hours</a>
+            <li class="dropdown mobile-menu-item">
+                <a href="#" id="language-button">Language | Jazyk</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="cz/cart.html">Čeština</a></li>
+                </ul>
+            </li>
+        </div>
     </header>
     <main>
+         <!--AMERICANO POPUP-->
+        <div class="popup" id="americano-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Americano</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Size Options</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Regular</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Add-ins</p>
+                        <div class="selection">
+                            <p>Water</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Blend</p>
+                        <div class="selection">
+                            <p>Signature Espresso Roast</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Shots</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Add to Cart</button>
+            </div>
+        </div>
+        <!--CAPPUCCINO POPUP-->
+        <div class="popup" id="cappuccino-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Cappuccino</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Size Options</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Regular</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Add-ins</p>
+                        <div class="selection">
+                            <p>Water</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Blend</p>
+                        <div class="selection">
+                            <p>Signature Espresso Roast</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Shots</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button">Add to Cart</button>
+            </div>
+        </div>
+         <!--GINGER LEMONADE POPUP-->
+         <div class="popup" id="ginger-lemonade-popup">
+            <div class="exit">X</div>
+            <div class="item-name">
+                <h2>Ginger Lemonade</h2>
+            </div>
+            <div class="options-container">
+                <div class="size-options">
+                    <h2>Size Options</h2>
+                    <div class="underline"></div>
+                    <div class="size-selector">
+                        <p>Regular</p>
+                    </div>
+                </div>
+                <div class="modifications">
+                    <h2>Modifications</h2>
+                    <div class="underline"></div>
+                    <div class="add-ins">
+                        <p class="option-label">Add-ins</p>
+                        <div class="selection">
+                            <p>Water</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="blend">
+                        <p class="option-label">Blend</p>
+                        <div class="selection">
+                            <p>Signature Espresso Roast</p>
+                            <p class="drop-arrow">⌄</p>
+                        </div>
+                    </div>
+                    <div class="shot-quantity">
+                        <p class="option-label">Shots</p>
+                        <div class="increment-tool">
+                            <div class="minus">
+                                <p><a href="#" id="espresso-shots-minus">-</a></p>
+                            </div>
+                            <div class="quant">
+                                <p id="espresso-shots-quant">1</p>
+                            </div>
+                            <div class="plus">
+                                <p><a href="#" id="espresso-shots-plus">+</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="add-to-cart">
+                <button class="movement-button add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        
         <div class="cartpg">
             <div class="menubox">
                 <div class="order">
@@ -66,7 +241,8 @@
                             <a href="17">17</a>
                         </div>
                     </div>
-                    <h3 class="Total">Total(5)...</h3>
+                    <h3 class="Total">Total(5)...
+                        350(CZK)</h3>
                     <div class="continuebutton">
                         <a href="./FinalPage2.html">
                             <button class="continue"> Continue
@@ -74,27 +250,29 @@
                         </a>
                     </div>
                 </div>
-
             </div>
             <div class="coffeebox">
-
                 <div class="box">
                     <div class="coffee">
                         <img class="coffee" src="./assets/coffee.png" alt="Coffee Image">
                     </div>
                     <div class="cftext">
                         <div class="cftitle">
-                            Americano
+                            <p>Americano</p>
                         </div>
                         <div class="cfdetail">
-                            Small,
-                            Decaf
+                            <p>Regular,
+                                Decaf</p>
                         </div>
-                        <div class="edit">
-                            <button class="editbutton">
-                                <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
-                            </button>
+                        <div class="cfprice">
+                            <p>70</p>
                         </div>
+
+                            <div class="edit">
+                                <button class="editbutton">
+                                    <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
+                                </button>
+                            </div>
                     </div>
                 </div>
                 <div class="box">
@@ -103,16 +281,21 @@
                     </div>
                     <div class="cftext">
                         <div class="cftitle">
-                            Americano
+                            <p>Americano</p>
                         </div>
                         <div class="cfdetail">
-                            Large
+                            <p>Regular</p>
                         </div>
-                        <div class="edit">
-                            <button class="editbutton">
-                                <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
-                            </button>
+                        <div class="cfprice">
+                            <p>70</p>
                         </div>
+
+                            <div class="edit">
+                                <button class="editbutton">
+                                    <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
+                                </button>
+                            </div>
+                    
                     </div>
                 </div>
                 <div class="box">
@@ -121,16 +304,19 @@
                     </div>
                     <div class="cftext">
                         <div class="cftitle">
-                            Cappucino
+                            <p>Cappucino</p>
                         </div>
                         <div class="cfdetail">
-                            Medium
+                            <p>Regular</p>
                         </div>
-                        <div class="edit">
-                            <button class="editbutton">
-                                <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
-                            </button>
+                        <div class="cfprice">
+                            <p>70</p>
                         </div>
+                            <div class="edit">
+                                <button class="editbutton">
+                                    <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
+                                </button>
+                            </div>
                     </div>
                 </div>
                 <div class="box">
@@ -139,16 +325,19 @@
                     </div>
                     <div class="cftext">
                         <div class="cftitle">
-                            Lemonade
+                            <p>Ginger Lemonade</p>
                         </div>
                         <div class="cfdetail">
-                            Small
+                            <p>Regular</p>
                         </div>
-                        <div class="edit">
-                            <button class="editbutton">
-                                <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
-                            </button>
+                        <div class="cfprice">
+                            <p>70</p>
                         </div>
+                            <div class="edit">
+                                <button class="editbutton">
+                                    <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
+                                </button>
+                            </div>
                     </div>
                 </div>
                 <div class="box">
@@ -157,16 +346,21 @@
                     </div>
                     <div class="cftext">
                         <div class="cftitle">
-                            Lemonade
+                            <p> Ginger Lemonade</p>
                         </div>
                         <div class="cfdetail">
-                            Medium, No Ice
+                            <p>Regular, No Ice</p>
                         </div>
-                        <div class="edit">
-                            <button class="editbutton">
-                                <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
-                            </button>
+                        <div class="cfprice">
+                            <p>70</p>
                         </div>
+                        <a href="./softsmenu.html">
+                            <div class="edit">
+                                <button class="editbutton">
+                                    <a href="et"><img class="editimage" src="./assets/edit.png" alt="Edit Image"></a>
+                                </button>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -180,3 +374,4 @@
 </body>
 
 </html>
+<script src="mobilemenutoggle.js"></script>

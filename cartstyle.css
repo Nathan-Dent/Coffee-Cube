@@ -3,13 +3,12 @@
 }
 
 body {
-    padding: 0px;
-    margin: 0px;
     overflow-x: hidden;
 }
 
 .cartpg {
-    display: flex
+    display: flex;
+    flex-direction: row;
 }
 
 .menubox {
@@ -19,7 +18,7 @@ body {
     width: 600px;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .order {
@@ -30,12 +29,8 @@ body {
     justify-content: center;
 }
 
-
-
-
-/* Style the dropdown container */
-
-.drop-down{
+/* STYLE FOR THE ORDER DETAILS */
+.drop-down {
     display: flex;
     flex-direction: column;
 }
@@ -68,9 +63,7 @@ h3 {
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-content: center;
-
 }
-
 
 /* Style the dropdown content (hidden by default) */
 .store-content {
@@ -81,6 +74,7 @@ h3 {
     z-index: 1;
     border-radius: 9px;
 }
+
 .store-content a {
     color: white;
     padding: 12px 16px;
@@ -115,7 +109,7 @@ h3 {
 }
 
 /* Style the dropdown links */
- .time-content a {
+.time-content a {
     color: white;
     padding: 12px 16px;
     display: block;
@@ -123,9 +117,9 @@ h3 {
     font-weight: bold;
     font-size: small;
     text-align: center;
-    
-    
-    }
+
+
+}
 
 /* Change color on hover */
 .time-content a:hover {
@@ -135,9 +129,10 @@ h3 {
 /* Show the dropdown content on hover */
 .drop-down:hover .time-content {
     display: block;
-
 }
 
+
+/*STYLE FOR THE COFFEEBOX AND ITS DETAILS*/
 .coffeebox {
     display: flex;
     background-color: white;
@@ -168,7 +163,6 @@ h3 {
     border-color: lightgray;
     box-shadow: 0px 2px 5px gray;
     flex-direction: row;
-
 }
 
 .cftext {
@@ -243,19 +237,9 @@ h3 {
     border-color: white;
     box-shadow: 0px;
 }
-.coffee {
-    width: 75px;
-    height: 75px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.cappucino {
-    width: 75px;
-    height: 75px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
+.coffee,
+.cappucino,
 .lemonade {
     width: 75px;
     height: 75px;
@@ -263,15 +247,13 @@ h3 {
     margin-right: 10px;
 }
 
-
-/* nathans styling code*/
+/* NATHANS STYLING CODE FOR HEADER AND FOOTER */
 nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     padding-right: 40px;
 }
-
 
 .shopping-header {
     display: grid;
@@ -283,6 +265,13 @@ nav ul {
     width: 100vw;
     height: 65px;
     background-color: white;
+}
+
+.logobox {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    object-fit: contain;
 }
 
 .logobox img {
@@ -387,16 +376,119 @@ footer {
     box-shadow: 0px 1px 4px 0px #00000091;
 }
 
-
 a {
     text-decoration-line: none;
     color: black
 }
 
+/* Pop-up styling Desktop*/
+.popup {
+    position: absolute;
+    height: 600px;
+    width: 75vw;
+    z-index: 3;
+    left: 12.5%;
+    background-color: white;
+    border: 1px solid #767676;
+    border-radius: 16px;
+    box-shadow: 0px 0px 12px 1px;
+    display: none;
+    grid-template-rows: 1fr 3fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
 
-@media screen and (max-width: 1000px) {
+}
+
+.item-name {
+    grid-row: 1;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+.size-options {
+    grid-row: 2;
+    margin-bottom: 5px;
+}
+
+.underline {
+    height: 10px;
+    width: 200px;
+    background-color: #96663B;
+    opacity: 39%;
+    border-radius: 25px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selection {
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    cursor: pointer;
+}
+
+.selection p {
+    margin-left: 20px;
+}
+
+.drop-arrow {
+    grid-column: 2;
+}
+
+.add-to-cart {
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.add-to-cart .movement-button {
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.exit {
+    position: absolute;
+    z-index: 4;
+    font-size: xx-large;
+    font-weight: bolder;
+    left: 95%;
+    top: 15px;
+    cursor: pointer;
+}
+
+/* Specific for mobile to not display on desktop*/
+@media screen and (min-width: 1000px) {
+    .hamburger {
+        display: none;
+    }
 
     .shopping-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .shopping-header-mobile {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+ /* SPECIFIC TO MOBILE HEADER WITH HAMBURGER MENU*/
+    header {
+        display: none;
+    }
+
+    header nav {
         display: none;
     }
 
@@ -404,6 +496,222 @@ a {
         width: 90vw;
     }
 
+    #order-online {
+        width: 70vw
+    }
+
+    #the-menu {
+        padding: 0px;
+    }
+
+    .hamburger {
+        padding: 15px 15px;
+        display: inline-block;
+        cursor: pointer;
+        text-transform: none;
+        background-color: transparent;
+        border: 0;
+        margin: 0;
+        outline: none;
+        z-index: 9999;
+        display: block;
+    }
+
+
+    .hamburger.is-active .hamburger-inner {
+        bottom: 0;
+        transform: translate(0, -10px) rotate(-45deg);
+    }
+
+    .hamburger.is-active .hamburger-inner::before {
+        top: 0;
+        transform: rotate(-90deg);
+    }
+
+    .hamburger-box {
+        width: 30px;
+        height: 24px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .hamburger-box::before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+    }
+
+    .hamburger-inner {
+        display: block;
+        top: auto;
+        bottom: 5px;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before {
+        width: 30px;
+        height: 3px;
+        background-color: #351f16;
+        border-radius: 0;
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger-inner::before {
+        content: "";
+        display: block;
+        top: -10px;
+    }
+
+    #the-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #C3A88F;
+        z-index: -99;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        padding-bottom: 90px;
+
+    }
+
+    #the-menu.is-active {
+        z-index: 9990;
+        opacity: 1;
+        transform: translateY(0%);
+        padding: 0px;
+    }
+
+    #the-menu ul {
+        flex-direction: column;
+        align-items: center;
+
+        height: 100vh;
+        padding: 50px;
+    }
+
+    #the-menu ul a {
+        color: white;
+        font-size: xx-large;
+        font-weight: bolder;
+    }
+
+    .increment-tool {
+        display: none;
+    }
+
+    .shopping-header {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .shopping-interface {
+        display: block;
+    }
+
+    .shopping-header-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px;
+        background-color: white;
+        color: black;
+        position: fixed;
+        height: 100px;
+        width: 100vw;
+        box-shadow: 0px 1px 4px 0px #00000091;
+
+    }
+
+    main {
+        padding-top: 120px;
+    }
+
+    .movement-container {
+        display: flex;
+    }
+
+    .hamburger {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .logobox {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .logobox img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+
+    #mobile-nav-links {
+        display: none;
+        position: fixed;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+
+        background-color: #C3A88F;
+        color: white;
+        font-size: xx-large;
+
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+
+    }
+
+    #mobile-nav-links.is-active-flex {
+        display: flex;
+    }
+
+    .mobile-menu-item,
+    #language-button {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: white;
+    }
+
+
+    table {
+        border-spacing: 20px;
+    }
+
+    .movement-button {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 310px;
+    }
+
+
+
+    /* SPECIFIC FOR CART MOBILE*/
     .cartpg {
         display: flex;
         flex-direction: column-reverse;
@@ -428,7 +736,6 @@ a {
         flex-wrap: nowrap;
         justify-content: flex-end;
         align-items: flex-start;
-
     }
 
     .store-content .time-content {
@@ -441,32 +748,57 @@ a {
 
     h3 {
         font-size: small;
-
     }
 
     .coffeebox {
         margin-top: 0px;
         margin-left: 0px;
         margin-bottom: 0px;
-        width:auto;
-
-
+        width: auto;
     }
 
     .box {
         width: auto;
         height: 150px;
         box-shadow: 0px 2px 5px gray;
-        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+
     }
-    .cftext{
-        margin-left: 0px;
-    }
-    .cftitle{
+
+    .cftitle {
         font-size: medium;
     }
-    .cfdetail{
-        font-size:small;
 
+    .cfdetail {
+        font-size: small;
+    }
+
+    /* POPUP STYLE MOBILE */
+    .popup {
+        height: 800px;
+        left: 6.25%;
+        grid-template-rows: 0.5fr 3fr 1fr;
+    }
+
+    .exit {
+        left: 90%;
+    }
+
+    .options-container {
+        flex-direction: column;
+    }
+
+    .add-to-cart .movement-button {
+        margin: 0px;
+        margin-top: 30px;
+    }
+
+    .shot-quantity .increment-tool {
+        display: grid;
+        width: 100px;
+        height: 30px;
+        font-size: x-large;
     }
 }
